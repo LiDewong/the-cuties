@@ -1,3 +1,3 @@
 # the-cuties
-copy this link
-https://github.com/LiDewong/the-cuties.git
+Here is the link to preview my website:
+https://lidewong.github.io/the-cuties/thecuties.html
