@@ -1,16 +1,26 @@
 div {
-  /* background-color: #c8f2ef; */
+  background-color: #ffffff;
+  margin-top: 0px;
 }
 h1 {
   color: rgb(51, 119, 245);
   font-size: 100px;
+  margin: 0px;
+  padding: 10px;
 }
 body {
   background-color: #26abfd;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  ;
 }
 hr {
   background-color: none;
   border-color: #ffffff;
+  margin: 0px;
+  size: 0px;
+  margin-bottom: 10px
   /* border-style: none;
   border-top: none; */
 
@@ -21,4 +31,16 @@ hr {
 }
 .qsee {
   color: mintcream;
+}
+.game{
+  margin-left: 20%;
+  background-color: #26abfd;
+}
+.psychological{
+  margin-left: 60%;
+  background-color: #26abfd;
+}
+.gaze{
+  margin-left: 20%;
+  background-color: #26abfd;
 }
