@@ -7,6 +7,7 @@ h1 {
   font-size: 100px;
   margin: 0px;
   padding: 10px;
+  font-family: 'Syne Tactile', cursive;
 }
 body {
   background-color: #26abfd;
@@ -39,10 +40,16 @@ hr {
   left: 20%;
 }
 .game{
-  margin-left: 60%;
+  /* margin-left: 60%; */
   background-color: #26abfd;
+  position: absolute;
+  right: 20%;
 }
 .psychological{
-  margin-left: 20%;
+  /* margin-left: 20%; */
   background-color: #26abfd;
+  position:relative;
+  left: 20%;
+  top: 200px;
+  
 }
