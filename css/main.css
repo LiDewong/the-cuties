@@ -1,5 +1,5 @@
 div {
-  background-color: #ffffff;
+  background-color: #EEF2FF;
   margin-top: 0px;
 }
 h1 {
@@ -8,6 +8,7 @@ h1 {
   margin: 0px;
   padding: 10px;
  font-family: 'Akaya Telivigala', cursive;
+ font-size: 1000%;
 }
 body {
   background-color: #26abfd;
@@ -53,3 +54,8 @@ hr {
   top: 200px;
   
 }
+/* .qteelogo{
+  position:fixed;
+  top:0px;
+  right: 10px;
+} */
