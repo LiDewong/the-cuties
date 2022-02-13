@@ -33,8 +33,10 @@ hr {
   color: mintcream;
 }
 .gaze{
-  margin-left: 20%;
+  /* margin-left: 20%; */
   background-color: #26abfd;
+  position: relative;
+  left: 20%;
 }
 .game{
   margin-left: 60%;
