@@ -5,28 +5,27 @@ div {
 h1 {
   color: rgb(51, 119, 245);
   font-size: 100px;
-  margin: 0px;
+  /* margin: 0px; */
   padding: 10px;
- font-family: 'Akaya Telivigala', cursive;
- font-size: 1000%;
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 1000%;
 }
 body {
   background-color: #26abfd;
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  ;
 }
 hr {
   background-color: none;
   border-color: #ffffff;
   margin: 0px;
   size: 0px;
-  margin-bottom: 10px
+  margin-bottom: 10px;
   /* border-style: none;
   border-top: none; */
 
-  border-width: 5px;
+  /* border-width: 5px; */
 }
 .welcom {
   color: #ffffff;
@@ -34,25 +33,24 @@ hr {
 .qsee {
   color: mintcream;
 }
-.gaze{
+.gaze {
   /* margin-left: 20%; */
   background-color: #26abfd;
   position: relative;
   left: 20%;
 }
-.game{
+.game {
   /* margin-left: 60%; */
   background-color: #26abfd;
   position: absolute;
   right: 20%;
 }
-.psychological{
+.psychological {
   /* margin-left: 20%; */
   background-color: #26abfd;
-  position:relative;
+  position: relative;
   left: 20%;
   top: 200px;
-  
 }
 /* .qteelogo{
   position:fixed;
