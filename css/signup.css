@@ -1,0 +1,16 @@
+h1 {
+  /* position: absolute; */
+  /* width: 339px; */
+  height: 69px;
+  /* left: 35%; */
+  /* top: 112px; */
+
+  font-family: Ropa Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 69px;
+  /* identical to box height */
+
+  color: #000000;
+}
