@@ -1,5 +1,5 @@
 .upper {
-  background: #f2adad;
+  background: #ffd600;
 
   margin: -8px;
   height: 70px;
@@ -32,14 +32,14 @@
 .profile {
   margin-top: 35px;
   position: relative;
-  background: #ffe5e5;
+  background: #fff1a8;
   width: 400px;
   height: 125px;
   top: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 40px;
 }
-.parent {
+.teacher {
   padding: 0;
   margin: 30px;
   width: 100px;
@@ -56,24 +56,23 @@
   transition-duration: 0.4s;
   /* filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.25)); */
 }
-.parent {
+.teacher {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
-  background: url("qsee-parent-non-shadow.png");
+  background: url("qsee-teacher-non-shadow.png");
   background-position: center;
   background-size: cover;
-  background-color: #ff9696;
-  box-shadow: inset -1px -7px 0px 4px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
 }
-.parent:hover {
+/* .teacher:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   transform: scale(0.8);
   box-shadow: inset -1px -3px 0px 2px rgba(0, 0, 0, 0.25);
-}
+} */
 .name {
   text-align: center;
   position: relative;
   left: 50px;
-  bottom: 165px;
+  bottom: 140px;
   font-size: 36px;
   line-height: 42px;
   font-family: "Roboto", sans-serif;
@@ -81,20 +80,20 @@
 }
 .select {
   position: relative;
-  bottom: 170px;
+  bottom: 140px;
   left: 50px;
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
 }
 select {
-  width: 20%;
+  width: 27%;
   height: 40px;
   margin-bottom: 20px;
-  background: #f5aeae;
+  background: #ffd600;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  border: #f5aeae;
+  border: none;
   box-sizing: border-box;
   /* border-radius: 40px; */
   text-align: center;
@@ -120,13 +119,13 @@ button {
   right: 150px;
   top: 50px;
 }
-.attendance img {
+.forum img {
   height: 50%;
   position: relative;
   right: 150px;
   top: 50px;
 }
-.psychological img {
+.attendance img {
   height: 50%;
   position: relative;
   right: 150px;
@@ -146,16 +145,30 @@ h1 {
   font-family: "Baloo 2", cursive;
   font-size: 50px;
   line-height: 87px;
+  margin: 0px;
 }
 .class {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 
   background-position: center;
   background-size: cover;
-  background-color: #ff9696;
+  background-color: #ffd600;
   box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
 }
 .class:hover {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  transform: scale(1.06);
+  box-shadow: inset -7px -13px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.forum {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+  background-position: center;
+  background-size: cover;
+  background-color: #ffd600;
+  box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
+}
+.forum:hover {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
   transform: scale(1.06);
   box-shadow: inset -7px -13px 0px 4px rgba(0, 0, 0, 0.25);
@@ -165,23 +178,10 @@ h1 {
 
   background-position: center;
   background-size: cover;
-  background-color: #ff9696;
+  background-color: #ffd600;
   box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
 }
 .attendance:hover {
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
-  transform: scale(1.06);
-  box-shadow: inset -7px -13px 0px 4px rgba(0, 0, 0, 0.25);
-}
-.psychological {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-
-  background-position: center;
-  background-size: cover;
-  background-color: #ff9696;
-  box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
-}
-.psychological:hover {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
   transform: scale(1.06);
   box-shadow: inset -7px -13px 0px 4px rgba(0, 0, 0, 0.25);
@@ -191,7 +191,7 @@ h1 {
 
   background-position: center;
   background-size: cover;
-  background-color: #ff9696;
+  background-color: #ffd600;
   box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
 }
 .grades:hover {
