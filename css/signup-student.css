@@ -18,7 +18,7 @@ body {
 
 .bg-image {
   /* The image used */
-  background-image: url("parent.png");
+  background-image: url("student.jpg");
 
   /* Center and scale the image nicely */
   background-repeat: no-repeat;
@@ -28,14 +28,13 @@ body {
   height: 100%;
 }
 .layer {
-  background-color: rgba(247, 162, 162, 0.589);
+  background-color: rgba(162, 196, 247, 0.589);
   /* background-repeat: no-repeat;
   background-position: left top; */
   background-size: 100% 100%;
   flex: 1;
   height: 100%;
 }
-
 .content {
   flex: 1;
   height: 100%;
@@ -51,6 +50,10 @@ body {
   box-sizing: border-box;
   border-radius: 40px;
   text-align: center;
+  color: #fffcfc;
+}
+.qseestudent {
+  height: 50%;
 }
 .content select {
   width: 70%;
@@ -73,62 +76,25 @@ body {
   width: 20%;
   box-sizing: border-box;
 
-  background: #f5aeae;
+  background: #4b77cd;
   box-shadow: inset 0px -5px 11px 3px rgba(0, 0, 0, 0.25);
   border-radius: 88px;
   color: #fffcfc;
 }
-.qseeParent {
+.qseestudent {
   height: 50%;
   position: relative;
   top: 20%;
   left: 25%;
 }
-.Parent {
+.student {
   position: relative;
   text-align: center;
   margin-top: 10%;
   font-size: 64px;
   font-family: "Righteous", cursive;
-  /* line-height: 79px; */
-  /* display: flex; */
-  /* align-items: center; */
 
   color: #000000;
 
   mix-blend-mode: normal;
-  /* border: 1px solid #000000; */
-  /* margin-top: 20%;
-  margin-left: %; */
 }
-/* body {
-  /* parent image background */
-/* margin: 0px;
-  padding: 0px; */
-/* background-image: url("parent.png");
-
-  background-repeat: no-repeat;
-  background-size: 100vh; */
-
-/* 
-  background-size: right cover;
-  background-position: right; */
-/* background-size: 50% 100%; */
-/* position: absolute;
-  right: 70px;
-  background-size: cover; */
-/* width: 825px;
-  height: 1173px; */
-/* left: 720px;
-  top: -132px; */
-/* Center and scale the image nicely */
-/* background-repeat: no-repeat;
-  background-position: right;
-  background-size: 100% 100%;
-  flex: 1;
-  height: 100%; 
-} 
-.grid-container {
-  display: grid;
-}
-*/
