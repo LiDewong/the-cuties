@@ -77,6 +77,7 @@
   font-size: 36px;
   line-height: 42px;
   font-family: "Roboto", sans-serif;
+  color: #000000;
 }
 .select {
   position: relative;
@@ -138,8 +139,11 @@ button {
 h1 {
   color: #ffffff;
   position: relative;
-  bottom: 50px;
+  bottom: 100px;
   left: 50px;
+  font-family: "Baloo 2", cursive;
+  font-size: 50px;
+  line-height: 87px;
 }
 .class {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);

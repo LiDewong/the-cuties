@@ -32,14 +32,14 @@
 .profile {
   margin-top: 35px;
   position: relative;
-  background: #ffe5e5;
+  background: #dae9ff;
   width: 400px;
   height: 125px;
-  top: 10px;
+  top: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 40px;
 }
-.parent {
+.student {
   padding: 0;
   margin: 30px;
   width: 100px;
@@ -56,18 +56,24 @@
   transition-duration: 0.4s;
   /* filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.25)); */
 }
-.parent {
+.student {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
-  background: url("qsee-parent-non-shadow.png");
+  background: url("qsee-student-non-shadow.png");
   background-position: center;
   background-size: cover;
-  background-color: #ff9696;
-  box-shadow: inset -1px -7px 0px 4px rgba(0, 0, 0, 0.25);
+  background-color: #a4c8ff;
+  box-shadow: inset -1px -3px 0px 1px rgba(0, 0, 0, 0.25);
 }
-.parent:hover {
+/* .student:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   transform: scale(0.8);
   box-shadow: inset -1px -3px 0px 2px rgba(0, 0, 0, 0.25);
+} */
+.droplet {
+  position: absolute;
+  right: -500px;
+  top: 5px;
+  width: 70%;
 }
 .name {
   text-align: center;
@@ -77,6 +83,7 @@
   font-size: 36px;
   line-height: 42px;
   font-family: "Roboto", sans-serif;
+  color: #000000;
 }
 .select {
   position: relative;
@@ -86,17 +93,17 @@
   font-size: 24px;
   line-height: 28px;
 }
-select {
+/* select {
   width: 20%;
   height: 40px;
   margin-bottom: 20px;
-  background: #f5aeae;
+  background: #a4c8ff;
   border: 2px solid #000000;
   box-sizing: border-box;
   border-radius: 40px;
   text-align: center;
   color: #000000;
-}
+} */
 button {
   position: relative;
 
@@ -117,19 +124,19 @@ button {
   right: 150px;
   top: 50px;
 }
-.attendance img {
+.game img {
   height: 50%;
   position: relative;
   right: 150px;
   top: 50px;
 }
-.psychological img {
+.todo img {
   height: 50%;
   position: relative;
   right: 150px;
   top: 50px;
 }
-.grades img {
+.subject img {
   height: 50%;
   position: relative;
   right: 150px;
@@ -138,15 +145,18 @@ button {
 h1 {
   color: #ffffff;
   position: relative;
-  bottom: 50px;
+  bottom: 100px;
   left: 50px;
+  font-family: "Baloo 2", cursive;
+  font-size: 50px;
+  line-height: 87px;
 }
 .class {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 
   background-position: center;
   background-size: cover;
-  background-color: #ff9696;
+  background-color: #a4c8ff;
   box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
 }
 .class:hover {
@@ -154,41 +164,41 @@ h1 {
   transform: scale(1.06);
   box-shadow: inset -7px -13px 0px 4px rgba(0, 0, 0, 0.25);
 }
-.attendance {
+.game {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 
   background-position: center;
   background-size: cover;
-  background-color: #ff9696;
+  background-color: #a4c8ff;
   box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
 }
-.attendance:hover {
+.game:hover {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
   transform: scale(1.06);
   box-shadow: inset -7px -13px 0px 4px rgba(0, 0, 0, 0.25);
 }
-.psychological {
+.todo {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 
   background-position: center;
   background-size: cover;
-  background-color: #ff9696;
+  background-color: #a4c8ff;
   box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
 }
-.psychological:hover {
+.todo:hover {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
   transform: scale(1.06);
   box-shadow: inset -7px -13px 0px 4px rgba(0, 0, 0, 0.25);
 }
-.grades {
+.subject {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 
   background-position: center;
   background-size: cover;
-  background-color: #ff9696;
+  background-color: #a4c8ff;
   box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
 }
-.grades:hover {
+.subject:hover {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
   transform: scale(1.06);
   box-shadow: inset -7px -13px 0px 4px rgba(0, 0, 0, 0.25);
