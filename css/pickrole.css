@@ -5,7 +5,7 @@ h1 {
   /* left: 35%; */
   /* top: 112px; */
 
-  font-family: 'Ropa Sans', sans-serif;
+  font-family: "Ropa Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 72px;
@@ -31,6 +31,11 @@ button {
   transition-duration: 0.4s;
   /* filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.25)); */
 }
+h2 {
+  margin: 165px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 .parent {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
   background: url("qsee-parent-non-shadow.png");
@@ -49,7 +54,7 @@ button {
   background: url("qsee-student-non-shadow.png");
   background-position: center;
   background-size: cover;
-  background-color: #A4C8FF;
+  background-color: #a4c8ff;
   box-shadow: inset -3px -13px 0px 4px rgba(0, 0, 0, 0.25);
 }
 .student:hover {
@@ -58,18 +63,27 @@ button {
   box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
 }
 .teacher {
-   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
   background: url("qsee-teacher-non-shadow.png");
   background-position: center;
   background-size: cover;
-  background-color: #FFD646;
+  background-color: #ffd646;
   box-shadow: inset -3px -13px 0px 4px rgba(0, 0, 0, 0.25);
 }
 .teacher:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   transform: scale(0.8);
   box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
-
+}
+.red {
+  color: #ff9696;
+}
+.blue {
+  color: #a4c8ff;
+}
+.yellow {
+  color: #ffd646;
+}
 /* .button1 {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 } */

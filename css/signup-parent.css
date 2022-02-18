@@ -2,10 +2,11 @@ body {
   /* parent image background */
   /* margin: 0px;
   padding: 0px; */
-  background-image: url("parent.png");
+  /* background-image: url("parent.png");
 
   background-repeat: no-repeat;
-  background-size: 100vh;
+  background-size: 100vh; */
+
   /* 
   background-size: right cover;
   background-position: right; */
@@ -23,4 +24,7 @@ body {
   background-size: 100% 100%;
   flex: 1;
   height: 100%; */
+}
+.grid-container {
+  display: grid;
 }
