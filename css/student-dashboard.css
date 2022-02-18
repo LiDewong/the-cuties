@@ -1,0 +1,195 @@
+.upper {
+  background: #a4c8ff;
+
+  margin: -8px;
+  height: 70px;
+}
+.tlines {
+  position: relative;
+  width: 67px;
+  height: 44px;
+  left: 30px;
+  top: 18px;
+}
+.searchbar {
+  position: absolute;
+  width: 380px;
+
+  right: 100px;
+  top: 8px;
+}
+.home {
+  background: url("homebtn.png");
+  background-position: center;
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  right: 3px;
+  top: -5px;
+  background-size: cover;
+}
+
+.profile {
+  margin-top: 35px;
+  position: relative;
+  background: #ffe5e5;
+  width: 400px;
+  height: 125px;
+  top: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+}
+.parent {
+  padding: 0;
+  margin: 30px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  /* top: 300px;
+  left: 400px; */
+  position: relative;
+  right: 100px;
+  bottom: 15px;
+
+  border: none;
+  border-radius: 50%;
+  transition-duration: 0.4s;
+  /* filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.25)); */
+}
+.parent {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  background: url("qsee-parent-non-shadow.png");
+  background-position: center;
+  background-size: cover;
+  background-color: #ff9696;
+  box-shadow: inset -1px -7px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.parent:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(0.8);
+  box-shadow: inset -1px -3px 0px 2px rgba(0, 0, 0, 0.25);
+}
+.name {
+  text-align: center;
+  position: relative;
+  left: 50px;
+  bottom: 165px;
+  font-size: 36px;
+  line-height: 42px;
+  font-family: "Roboto", sans-serif;
+}
+.select {
+  position: relative;
+  bottom: 170px;
+  left: 50px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+}
+select {
+  width: 20%;
+  height: 40px;
+  margin-bottom: 20px;
+  background: #f5aeae;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 40px;
+  text-align: center;
+  color: #000000;
+}
+button {
+  position: relative;
+
+  width: 30%;
+  height: 225px;
+  margin: 5px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 0px;
+}
+.class {
+  margin-top: 30px;
+}
+.class img {
+  height: 50%;
+  position: relative;
+  right: 150px;
+  top: 50px;
+}
+.attendance img {
+  height: 50%;
+  position: relative;
+  right: 150px;
+  top: 50px;
+}
+.psychological img {
+  height: 50%;
+  position: relative;
+  right: 150px;
+  top: 50px;
+}
+.grades img {
+  height: 50%;
+  position: relative;
+  right: 150px;
+  top: 50px;
+}
+h1 {
+  color: #ffffff;
+  position: relative;
+  bottom: 50px;
+  left: 50px;
+}
+.class {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+  background-position: center;
+  background-size: cover;
+  background-color: #ff9696;
+  box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
+}
+.class:hover {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  transform: scale(1.06);
+  box-shadow: inset -7px -13px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.attendance {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+  background-position: center;
+  background-size: cover;
+  background-color: #ff9696;
+  box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
+}
+.attendance:hover {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  transform: scale(1.06);
+  box-shadow: inset -7px -13px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.psychological {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+  background-position: center;
+  background-size: cover;
+  background-color: #ff9696;
+  box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
+}
+.psychological:hover {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  transform: scale(1.06);
+  box-shadow: inset -7px -13px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.grades {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+  background-position: center;
+  background-size: cover;
+  background-color: #ff9696;
+  box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
+}
+.grades:hover {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  transform: scale(1.06);
+  box-shadow: inset -7px -13px 0px 4px rgba(0, 0, 0, 0.25);
+}
