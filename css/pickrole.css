@@ -1,0 +1,80 @@
+h1 {
+  /* position: absolute; */
+  /* width: 339px; */
+  height: 69px;
+  /* left: 35%; */
+  /* top: 112px; */
+
+  font-family: 'Ropa Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 69px;
+  /* identical to box height */
+
+  color: #000000;
+}
+body {
+  background: #ffffff;
+}
+button {
+  padding: 0;
+  margin: 50px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  /* top: 300px;
+  left: 400px; */
+  position: relative;
+  border: none;
+  border-radius: 50%;
+  transition-duration: 0.4s;
+  /* filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.25)); */
+}
+.parent {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  background: url("qsee-parent-non-shadow.png");
+  background-position: center;
+  background-size: cover;
+  background-color: #ff9696;
+  box-shadow: inset -3px -13px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.parent:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(0.8);
+  box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
+}
+.student {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  background: url("qsee-student-non-shadow.png");
+  background-position: center;
+  background-size: cover;
+  background-color: #A4C8FF;
+  box-shadow: inset -3px -13px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.student:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(0.8);
+  box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
+}
+.teacher {
+   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  background: url("qsee-teacher-non-shadow.png");
+  background-position: center;
+  background-size: cover;
+  background-color: #FFD646;
+  box-shadow: inset -3px -13px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.teacher:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(0.8);
+  box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
+
+/* .button1 {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
+/* .button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+} */
