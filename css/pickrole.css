@@ -77,12 +77,15 @@ h2 {
 }
 .red {
   color: #ff9696;
+  font-family: "Ropa Sans", sans-serif;
 }
 .blue {
   color: #a4c8ff;
+  font-family: "Ropa Sans", sans-serif;
 }
 .yellow {
   color: #ffd646;
+  font-family: "Ropa Sans", sans-serif;
 }
 /* .button1 {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
