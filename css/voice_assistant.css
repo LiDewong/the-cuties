@@ -4,12 +4,16 @@
   margin: -8px;
   height: 70px;
 }
-.tlines {
+.back {
+  background: url("back.png");
+  background-position: center;
+  background-size: cover;
   position: relative;
   width: 67px;
   height: 44px;
   left: 30px;
   top: 18px;
+  border: none;
 }
 
 .home {

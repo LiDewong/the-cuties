@@ -57,11 +57,11 @@
   /* filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.25)); */
 }
 .teacher {
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.116);
   background: url("qsee-teacher-non-shadow.png");
   background-position: center;
   background-size: cover;
-  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.25));
 }
 /* .teacher:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
@@ -114,27 +114,27 @@ button {
   margin-top: 30px;
 }
 .class img {
-  height: 50%;
+  height: 40%;
   position: relative;
-  right: 150px;
+  right: 145px;
   top: 50px;
 }
 .forum img {
-  height: 50%;
+  height: 40%;
   position: relative;
-  right: 150px;
+  right: 145px;
   top: 50px;
 }
 .attendance img {
-  height: 50%;
+  height: 40%;
   position: relative;
-  right: 150px;
+  right: 145px;
   top: 50px;
 }
 .grades img {
-  height: 50%;
+  height: 40%;
   position: relative;
-  right: 150px;
+  right: 145px;
   top: 50px;
 }
 h1 {
