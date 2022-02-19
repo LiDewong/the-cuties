@@ -16,9 +16,9 @@
         background-color: cyan;
         border-radius: 20px;
       } */
-      .content {
-        color: cyan;
-      }
+      /* .content {
+        color: rgb(139, 189, 189);
+      } */
     </style>
   </head>
   <body>
@@ -37,7 +37,10 @@
       <div class="text"><h2 class="h2">Hi I'm Qsee, how can I help you?</h2></div>
       </p>
       <p>
-      <div class="voice"><img class="voice"src="css\voice.png"></div></p>
+      <div >
+        <h2 class="voice"></h2>
+        <!-- <img class="voice"src="css\voice.png"> -->
+      </div></p>
       <!-- <p>
       <button class="profile2"></button>
       <div class="text2"><h2 class="hh2">Opening Ali’s Psychological report...</h2></div>
@@ -47,12 +50,12 @@
       <div class="bottom">
       <!-- <h1>Hi I'm Qsee, how can I help you?</h1> -->
       <a class="rainbow rainbow-1"> <button class="talk">Click here to Talk</button><a/>
-      <h3 class="content"></h3>
+      <!-- <h3 class="voice"></h3> -->
       </center>
       <script>
         // The JavaScript Part Starts
         const btn = document.querySelector(".talk");
-        const content = document.querySelector(".content");
+        const content = document.querySelector(".voice");
 
         const report = ["opening report sir"];
         const attendance = ["opening attendance sir"];
