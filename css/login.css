@@ -105,3 +105,11 @@ body {
   background: linear-gradient(180deg, #000000 0%, #00b2ff 100%);
   border-radius: 52px; 
 } */
+.back {
+  color: #ffffff;
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 36px;
+  position: relative;
+  top: 0px;
+  left: 30px;
+}
