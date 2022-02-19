@@ -102,31 +102,29 @@ body {
 .voice {
   position: absolute;
   right: 3%;
-  top: 170px;
+  top: 200px;
   height: 50px;
   background: #ffffff;
   border-radius: 88px;
 }
-.profile2 {
+/* .profile2 {
   padding: 0;
   margin: 30px;
   width: 70px;
   height: 70px;
   text-align: center;
-  /* top: 300px;
-  left: 400px; */
+ 
   position: relative;
   top: 170px;
   border: none;
   border-radius: 50%;
-  /* box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5); */
+  
   background: url("qsee-parent-non-shadow.png");
   background-position: center;
   background-size: cover;
   background-color: #ff9696;
-  /* box-shadow: inset -1px -7px 0px 4px rgba(0, 0, 0, 0.25); */
-}
-.text2 {
+  
+}  .text2 {
   position: relative;
   width: 448px;
   height: 50px;
@@ -140,7 +138,7 @@ body {
   position: relative;
   left: 30px;
   top: 10px;
-}
+} */
 .bottom {
   background: #f2adad;
 
@@ -168,7 +166,7 @@ body {
   box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
   border-radius: 100px;
   border: #ffffff;
-  cursor: onclick;
+  cursor: pointer;
 
   padding: 8px 16px;
 }
@@ -181,7 +179,7 @@ body {
     #f2adad6b 80%,
     #f2adad 100%
   );
-  animation: slidebg 0.9s linear infinite;
+  animation: slidebg 2s linear infinite;
 }
 @keyframes slidebg {
   to {
