@@ -24,8 +24,8 @@
   position: absolute;
   width: 65px;
   height: 65px;
-  right: 3px;
-  top: -20px;
+  right: 5px;
+  top: -100px;
   background-size: cover;
 }
 .h1 {
@@ -88,4 +88,15 @@ h2 {
 }
 .rally {
   height: 60%;
+}
+.back {
+  background: url("back.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 67px;
+  height: 44px;
+  left: 30px;
+  top: 15px;
+  margin-top: 0px;
 }
