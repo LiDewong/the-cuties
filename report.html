@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychological report</title>
+    <link rel="stylesheet" href="report.css">
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .chartMenu {
+            width: 100vw;
+            height: 40px;
+            background: #1A1A1A;
+            color: rgba(255, 26, 104, 1);
+        }
+        .chartMenu p {
+            padding: 10px;
+            font-size: 20px;
+        }
+        .chartCard{
+            width: 100vw;
+            height: calc(100vh-40px);
+            background: rgba(255, 26, 104, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .chartBox{
+            width: 60%;
+            padding: 30px;
+            border-radius: 20px;
+            border: solid 2px rgba(100, 26, 104, 1);
+            background: white;
+        }
+        .chart_container {
+            justify-content: center;
+            display: flex;
+        }
+        h1 {
+            text-align: center;
+            font-family: "Baloo 2", cursive;
+        }
+        p{
+            text-transform: bottom; 
+        }
+
+        img
+            {
+                display:block;
+                margin-top: 3%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        pre
+            {
+                text-align: center;
+                font-family: "Baloo 2", cursive;
+            }
+        
+        i{
+           
+            justify-content: center;
+            display: flex;
+        }
+        
+
+
+
+
+        
+    </style>
+</head>
+<body>
+
+    <img src="css\qsee-student-non-shadow.png" alt="QSEE" style="width:8%; height:8%;">
+    <br>
+    <h1>Educational Psychology Assessment Report</h1>
+    <br>
+    <pre style="font-size: 120%"><b>ID:</b> 001      <b>Class:</b> 3 Merah</pre>
+    <br>
+    <br>
+    
+    </div class="chartCard">
+        <div class="chart_container">
+            <div class="chartBox">
+                <canvas id = "myChart"></canvas>
+            </div>
+        </div>
+        <br>
+        <div class="chart_container">
+            <div class="chartBox">
+                <canvas id = "doughnutChart"></canvas>
+                <br>
+                <i> The student's skillset is measured based on his/her conversation with Qsee and game interest.</i>
+                <br>
+                <br>
+                <b>Analytical</b>
+                <p> The ability to collect and analyse data, solve a particular problem, and make decisions on the basis of available information.</p>  
+                <br>
+                <b>Creativity</b>
+                <p> The	ability to think about a task or a problem in a new or different way, or the ability to use the imagination to generate new ideas.</p>
+                <br>
+                <b>Exploration</b>
+                <p> The	ability to search for the purpose of discovery of information or resources; explore or investigate the unknown regions	</p>
+                <br>
+                <b>Competiveness</b>
+                <p>The ability to strive for the same object, position, or reward that another person is striving for.</p>
+                <br>
+                <b>Social </b>
+                <p> The ability to display good manners, communicate effectively with others, being considerate of the feelings of others and express personal needs. 	
+                </p>
+                <br>
+                <b>Mastery </b>
+                <p>The ability to continuously strive to achieve and improve upon one’s skills until a standard of excellence is achieved through repetition and practice, despite the absence of physical rewards.</p>
+                <br> 
+            </div>
+        </div>
+        <br>
+        <div class="chart_container">
+            <div class="chartBox">
+                <b>Strengths and Weakness</b>
+                <p>___________________________</p>  
+                <br>
+                <b>Gifts and Talents</b>
+                <p>___________________________</p>  
+                <br>
+                <b>Nature</b>
+                <p>___________________________</p>  
+                <br>
+                <b>Advice for Parents</b>
+                <p>___________________________</p>  
+                <br>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    
+    <script>
+        
+        
+        var ctx= document.getElementById('myChart').getContext('2d');
+        var chart= new Chart(ctx, {
+            type:'radar',
+
+            data:{
+                labels:["Language", "Math",  "Science","ICT","Arts","Music"], 
+                
+
+                datasets:[{
+                    label: "Strength",
+                    fontSize:20, 
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    
+                    borderColor:'rgb(255,99,132)',
+                    data: [41.67,21.86, 29.16,41.66,37.5,20.83],
+                },{
+                    label: "Interest",
+                    backgroundColor: 'rgb(0,0,132,0.3)',
+                    borderWidth: 2 , 
+                    borderColor:'rgb(0,0,132)',
+                    data: [49.41,21.87, 29.16,31.26,50.57,5.78],
+                }]
+
+               
+
+            
+
+                
+            },
+            
+            options: {
+                title:{
+                    display:true,
+                    text:['Evaluation of Student\'s Strengths and Interest'], 
+                    fontSize: 24,
+                },
+                subtitle: {
+                        display: true,
+                        text: 'Based on',
+                        },
+                legend:{
+                    position: 'bottom',
+                    labels:{
+                        fontSize:15,
+
+                    }
+                },
+                scale:{
+                    pointLabels:{
+                      fontSize:15,
+                     
+                    },
+
+                },
+                
+            }
+        });
+        
+
+
+        var ctx= document.getElementById('doughnutChart').getContext('2d');
+        var doughnutChart= new Chart(ctx, {
+            type:'doughnut',
+
+            data:{
+                labels:['Analytical',
+                'Creativity',
+                'Exploration',
+                'Competiveness',
+                'Social',
+                'Mastery'], 
+                
+
+                datasets:[{
+                    label: 'Ali\'s Personality Type',
+                    backgroundColor: [ 
+                                'rgb(255,99,132,0.3)',
+                                'rgb(54,162,235,0.3)',
+                                'rgb(255,106,86,0.3)',
+                                'rgb(75,192,192,0.3)',
+                                'rgb(153,102,255,0.3)',
+                                'rgb(255,159,64,0.3)',
+                                
+                            ],
+                    borderColor: [ 
+                                'rgb(255,99,132,0.3)',
+                                'rgb(54,162,235,0.3)',
+                                'rgb(255,106,86,0.3)',
+                                'rgb(75,192,192,0.3)',
+                                'rgb(153,102,255,0.3)',
+                                'rgb(255,159,64,0.3)',
+                                
+                            ],
+                    data: [23, 20, 8, 13, 10, 26],
+                    }]
+
+            
+
+                
+            },
+            options: {
+                radius:'50%',
+                
+                legend: {
+                    position: 'bottom',
+                    labels:{
+                        fontSize:15,
+
+                    }
+                },
+
+                plugins: {
+                    datalabels: {
+                        formatter: (value) => {
+                        return value + '%';
+                        }
+                    }
+                },
+
+                title:{
+                    display:true,
+                    text:'Student\'s Skillset', 
+                    fontSize: 24,
+                },
+                
+
+            },
+            
+            
+        });
+
+    </script>
+
+    
+</body>
+
+</html>

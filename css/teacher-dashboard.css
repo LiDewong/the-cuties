@@ -72,11 +72,13 @@
   text-align: center;
   position: relative;
   left: 50px;
-  bottom: 140px;
+  bottom: 165px;
   font-size: 36px;
   line-height: 42px;
   font-family: "Roboto", sans-serif;
   color: #000000;
+  margin-bottom: -20px;
+  margin-top: 30px;
 }
 .select {
   position: relative;
@@ -102,7 +104,7 @@ select {
 button {
   position: relative;
 
-  width: 30%;
+  width: 35%;
   height: 225px;
   margin: 5px;
   margin-top: 5px;
@@ -140,12 +142,14 @@ button {
 h1 {
   color: #ffffff;
   position: relative;
-  bottom: 100px;
+  bottom: 50px;
   left: 50px;
   font-family: "Baloo 2", cursive;
-  font-size: 50px;
+  font-size: 36px;
   line-height: 87px;
-  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: -30px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .class {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
