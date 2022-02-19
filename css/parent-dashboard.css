@@ -11,12 +11,34 @@
   left: 30px;
   top: 18px;
 }
-.searchbar {
+/* .searchbar {
   position: absolute;
   width: 380px;
 
   right: 100px;
   top: 8px;
+} */
+.src {
+  position: absolute;
+  width: 380px;
+  height: 40px;
+  right: 270px;
+  top: 15px;
+}
+.type {
+  position: absolute;
+  width: 380px;
+  height: 40px;
+  right: 100px;
+  top: 13px;
+  background: rgba(255, 255, 255, 0.58);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  border: #f2adad;
+  cursor: pointer;
 }
 .home {
   background: url("homebtn.png");
@@ -53,7 +75,7 @@
 
   border: none;
   border-radius: 50%;
-  transition-duration: 0.4s;
+  transition-duration: 0.1s;
   /* filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.25)); */
 }
 .parent {
@@ -101,6 +123,7 @@ select {
   /* border-radius: 40px; */
   text-align: center;
   color: #000000;
+  cursor: zoom-in;
 }
 button {
   position: relative;
@@ -112,6 +135,7 @@ button {
   border: none;
   border-radius: 10px;
   margin-bottom: 0px;
+  cursor: pointer;
 }
 .class {
   margin-top: 30px;
@@ -209,27 +233,6 @@ h1 {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
   transform: scale(1.06);
   box-shadow: inset -7px -13px 0px 4px rgba(0, 0, 0, 0.25);
-}
-.src {
-  position: absolute;
-  width: 380px;
-  height: 40px;
-  right: 270px;
-  top: 15px;
-}
-.type {
-  position: absolute;
-  width: 380px;
-  height: 40px;
-  right: 100px;
-  top: 13px;
-  background: rgba(255, 255, 255, 0.58);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  border: #a4c8ff;
 }
 
 /* .psyh1 {
