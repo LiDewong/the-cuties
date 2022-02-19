@@ -29,7 +29,7 @@
 }
 .background {
   display: block;
-  height: calc(100vh - 148px);
+  height: calc(100vh - 132px);
 }
 body {
   background: linear-gradient(
