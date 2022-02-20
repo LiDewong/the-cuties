@@ -119,10 +119,11 @@ body {
   border-radius: 88px;
   font-size: 28px;
 }
-.voice h2 {
+/* .voice h2 {
   margin: 10px;
   padding: 10px;
-}
+  line-height: 2;
+} */
 /* .profile2 {
   padding: 0;
   margin: 30px;
