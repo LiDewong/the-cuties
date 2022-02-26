@@ -44,6 +44,7 @@ h2 {
   background-size: cover;
   background-color: #ff9696;
   box-shadow: inset -3px -13px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
 }
 .parent:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
@@ -57,6 +58,7 @@ h2 {
   background-size: cover;
   background-color: #a4c8ff;
   box-shadow: inset -3px -13px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
 }
 .student:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
@@ -70,6 +72,7 @@ h2 {
   background-size: cover;
   background-color: #ffd646;
   box-shadow: inset -3px -13px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
 }
 .teacher:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
@@ -87,6 +90,10 @@ h2 {
 .yellow {
   color: #ffd646;
   font-family: "Ropa Sans", sans-serif;
+}
+
+.row {
+  padding-top: 100px;
 }
 /* .button1 {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
