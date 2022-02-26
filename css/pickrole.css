@@ -1,4 +1,4 @@
-h1 {
+.title {
   /* position: absolute; */
   /* width: 339px; */
   height: 69px;
@@ -8,10 +8,10 @@ h1 {
   font-family: "Ropa Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 72px;
+  font-size: 5rem;
   line-height: 69px;
   /* identical to box height */
-
+  padding-top: 50px;
   color: #000000;
 }
 body {
@@ -95,6 +95,10 @@ h2 {
 .row {
   padding-top: 100px;
 }
+.container {
+  font-size: larger;
+}
+
 /* .button1 {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 } */
