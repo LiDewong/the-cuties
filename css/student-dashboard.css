@@ -11,6 +11,16 @@
   left: 30px;
   top: 18px;
 }
+.qmeet {
+  background: url("icons8-google-meet-120.png");
+  background-position: center;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 120px;
+  top: 2px;
+  background-size: cover;
+}
 /* .searchbar {
   position: absolute;
   width: 380px;
