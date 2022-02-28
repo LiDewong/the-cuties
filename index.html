@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+
+
+  <link rel="stylesheet" href="conversation.css">
+  <style>
+
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    canvas {
+      position: absolute;
+      display: none;
+    }
+
+  </style>
+
+
+
+</head>
+<body>
+  <video id="video" width="720" height="560" autoplay muted></video>
+
+  <!--input type="text" id="number" value="0"/-->
+  
+  <p class="card-text" id="screen1"></p>
+
+
+  <!--
+    conversation
+  -->
+  <div class="popup">
+    <div class="popup-content">
+        <img src="close.jpg" alt="Close" class="close">
+        
+                <h2 id="question"> What do you prefer during your leisure time?</h2>
+                
+                <div class="choice-container">
+                    <input type="checkbox" id="reading" name="fav_language" value="Reading"> 
+                    <label class="choice-text " for="reading">Reading</label><br>
+                    
+                </div>
+                <div class="choice-container">
+                    <input type="checkbox" id="hiking" name="fav_language" value="Hiking"> 
+                    <label class="choice-text " for="hiking">Hiking</label><br>
+                    
+                </div>
+                <div class="choice-container">
+                    <input type="checkbox" id="sports" name="fav_language" value="Sports"> 
+                    <label class="choice-text " for="sports">Play Sports</label><br>
+                    
+                </div>
+                <div class="choice-container">
+                    <input type="checkbox" id="outing" name="fav_language" value="outing"> 
+                    <label class="choice-text " for="outing">Hang out with your friends</label><br>
+                    
+                </div>
+                <div class="choice-container">
+                    <input type="checkbox" id="writing" name="fav_language" value="Writing"> 
+                    <label class="choice-text " for="writing">Writing</label><br>
+                    
+                </div>
+                <div class="choice-container">
+                    <input type="checkbox" id="drawing" name="fav_language" value="Drawing"> 
+                    <label class="choice-text " for="drawing">Drawing</label><br>
+                 </div>
+
+                 <a href="#" class= "nextbtn" id ="nextbtn">Next Question</a>   
+
+    </div>
+
+    <div class="popup2-content">
+        <img src="close.jpg" alt="Close" class="close2">
+        
+                <h2 id="question"> What games do you like to play?</h2>
+                
+                <div class="choice-container">
+                    <input type="checkbox" id="analytical" name="fav_language" value="Analytical"> 
+                    <label class="choice-text " for="analytical">Brain games</label><br>
+                    
+                </div>
+                <div class="choice-container">
+                    <input type="checkbox" id="exploration" name="fav_language" value="Exploration"> 
+                    <label class="choice-text " for="exploration">Action-adventure</label><br>
+                    
+                </div>
+                <div class="choice-container">
+                    <input type="checkbox" id="social" name="fav_language" value="social"> 
+                    <label class="choice-text " for="social">Multiplayer online battle arena</label><br>
+                    
+                </div>
+                <div class="choice-container">
+                    <input type="checkbox" id="creativity" name="fav_language" value="creativity"> 
+                    <label class="choice-text " for="creativity">Role-playing</label><br>
+                    
+                </div>
+                <div class="choice-container">
+                    <input type="checkbox" id="mastery" name="fav_language" value="mastery"> 
+                    <label class="choice-text " for="mastery">Strategy</label><br>
+                    
+                </div>
+
+                <a href="#" class= "sbtbtn" id ="sbtbtn">Submit</a>   
+                
+
+                
+    </div>
+
+
+    
+</div>
+
+</body>
+</html>
+
+
+
+
+
