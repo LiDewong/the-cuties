@@ -121,7 +121,7 @@ function increment3() {
           limitlip = 30;
           leftlimit = 2.2;
           rightlimit = 0.78;
-        }, 12000);
+        }, 8000);
 
         window.open("https://lowyanruo.github.io/TowerGame/");
       } else {
