@@ -38,6 +38,13 @@
   top: -45px;
   left: 45%;
 }
+.droplet {
+  position: absolute;
+  right: 100px;
+  top: 85px;
+  width: 17%;
+  height: 50px;
+}
 button {
   position: relative;
 
