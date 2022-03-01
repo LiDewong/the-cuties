@@ -301,6 +301,7 @@ p {
   right: 3px;
   top: -5px;
   background-size: cover;
+  border: #a4c8ff;
 }
 .back {
   background: url("back.png");
@@ -312,6 +313,7 @@ p {
   left: 30px;
   top: 15px;
   margin-top: 0px;
+  border: #a4c8ff;
 }
 body {
   margin: 0px;
