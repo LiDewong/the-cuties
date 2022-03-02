@@ -1,0 +1,168 @@
+.upper {
+  background: #ffd600;
+
+  margin: -8px;
+  height: 70px;
+}
+.tlines {
+  position: relative;
+  width: 67px;
+  height: 44px;
+  left: 30px;
+  top: 6px;
+}
+.back {
+  background: url("back.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 67px;
+  height: 44px;
+  left: 30px;
+  top: 15px;
+  margin-top: 0px;
+  border: none;
+}
+.searchbar {
+  position: absolute;
+  width: 380px;
+
+  right: 100px;
+  top: 8px;
+}
+.src {
+  position: absolute;
+  width: 380px;
+  height: 40px;
+  right: 270px;
+  top: 15px;
+}
+.type {
+  position: absolute;
+  width: 380px;
+  height: 40px;
+  right: 100px;
+  top: 13px;
+  background: rgba(255, 255, 255, 0.58);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  border: #fff1a8;
+  cursor: pointer;
+}
+.home {
+  background: url("homebtn.png");
+  background-position: center;
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  right: 3px;
+  top: -5px;
+  background-size: cover;
+  border: none;
+}
+
+#btn-forum {
+  position: relative;
+  background: #ffee94;
+  margin-top: 50px;
+  color: #ffff;
+  width: 200px;
+}
+#btn-qna {
+  position: relative;
+  background: #ffee94;
+  margin-top: 20px;
+  color: #ffff;
+  width: 200px;
+}
+#btn-materials {
+  position: relative;
+  background: #ffee94;
+  margin-top: 20px;
+  color: #ffff;
+  width: 200px;
+}
+#title {
+  color: #ffff;
+  background: #ffee94;
+  width: 900px;
+  font-size: 36px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+#popover581503 {
+  border: 0px;
+}
+.white {
+  background: #ffff;
+  background-size: cover;
+  border-radius: 20px;
+  width: 860px;
+  height: 442px;
+}
+.padlet {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 250px;
+  background: #ffed8c;
+  border-radius: 20px;
+}
+
+#content {
+  /* color: aqua; */
+  width: fit-content;
+  background: #ffee94;
+  width: 900px;
+  height: 499px;
+  border-bottom-left-radius: calc(0.3rem - 1px);
+  border-bottom-right-radius: calc(0.3rem - 1px);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.profile-top {
+  float: left;
+  margin: 10px;
+  height: 40px;
+}
+.name {
+  color: rgb(0, 0, 0);
+  padding-top: 10px;
+}
+.hr {
+  width: 90%;
+  height: 0px;
+
+  border-top: 5px solid rgb(255, 255, 255);
+}
+h4 {
+  padding-left: 20px;
+}
+.pic {
+  width: 220px;
+  padding-left: 20px;
+}
+.add {
+  position: absolute;
+  left: 810px;
+  bottom: 20px;
+  height: 70px;
+}
+.h6 {
+  font-size: 8px;
+  margin-left: 10px;
+}
+.other {
+  font-size: 18px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+}
+.other-pic {
+  margin-left: 20px;
+  float: left;
+  height: 40px;
+  margin-right: 4px;
+}

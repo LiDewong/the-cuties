@@ -1,0 +1,4 @@
+.popover .popover-arrow::after,
+.popover .popover-arrow::before {
+  top: 140px;
+}

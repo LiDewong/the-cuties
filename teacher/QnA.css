@@ -1,0 +1,9 @@
+.popover .popover-arrow::after,
+.popover .popover-arrow::before {
+  top: 70px;
+}
+/* #popover581504 {
+  border: 0px;
+  position: absolute;
+  top: 10px;
+} */
