@@ -1,0 +1,108 @@
+.upper {
+  background: #a4c8ff;
+
+  margin: -8px;
+  height: 70px;
+}
+.tlines {
+  position: relative;
+  width: 67px;
+  height: 44px;
+  left: 30px;
+  top: 18px;
+}
+.searchbar {
+  position: absolute;
+  width: 380px;
+
+  right: 100px;
+  top: 8px;
+}
+.home {
+  background: url("homebtn.png");
+  background-position: center;
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  right: -30px;
+  top: -50px;
+  background-size: cover;
+}
+.h1 {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Baloo 2", cursive;
+  font-size: 50px;
+  line-height: 87px;
+  position: absolute;
+  top: -45px;
+  left: 45%;
+}
+.droplet {
+  position: absolute;
+  right: 100px;
+  top: 85px;
+  width: 17%;
+  height: 50px;
+}
+button {
+  position: relative;
+
+  width: 20%;
+  height: 155px;
+  margin: 50px;
+  margin-top: 50px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 0px;
+}
+h2 {
+  color: #ffffff;
+  position: relative;
+
+  font-family: "Baloo 2", cursive;
+  font-size: 50px;
+  line-height: 87px;
+}
+.game {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+  background-position: center;
+  background-size: cover;
+  background-color: #a4c8ff;
+  box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
+}
+.game:hover {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  transform: scale(1.06);
+  box-shadow: inset -7px -13px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.mario {
+  height: 60%;
+}
+.futuristic {
+  height: 60%;
+}
+.crossy {
+  height: 60%;
+}
+.pinball {
+  height: 60%;
+}
+.story {
+  height: 60%;
+}
+.rally {
+  height: 60%;
+}
+.back {
+  background: url("back.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 67px;
+  height: 44px;
+  left: 30px;
+  top: 15px;
+  margin-top: 0px;
+}
