@@ -7,7 +7,7 @@
     <title>Document</title>
     <script defer src="face-api.min.js"></script>
     <script defer src="script.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <link rel="stylesheet" href="conversation.css" />
     <style>
       body {
@@ -62,128 +62,86 @@
     <!--
     conversation
   -->
-    <div class="popup">
-      <div class="popup-content">
-        <img src="close.jpg" alt="Close" class="close" />
+  <div class="popup">
+    <div class="popup2-content">
+        <img src="close.jpg" alt="Close" class="close2">
+        
+                <h2 id="question"> What do you prefer doing for leisure?</h2>
+                
+                <div class="choice-container">
+                    <input type="checkbox" id="reading" name="fav_language" value="Reading"> 
+                    <label class="choice-text " for="reading">Reading</label><br>
+                    
+                </div>
+                <div class="choice-container">
+                    <input type="checkbox" id="hiking" name="fav_language" value="Hiking"> 
+                    <label class="choice-text " for="hiking">Hiking</label><br>
+                    
+                </div>
+                <div class="choice-container">
+                    <input type="checkbox" id="sports" name="fav_language" value="Sports"> 
+                    <label class="choice-text " for="sports">Play Sports</label><br>
+                    
+                </div>
+                <div class="choice-container">
+                    <input type="checkbox" id="outing" name="fav_language" value="outing"> 
+                    <label class="choice-text " for="outing">Hang out with your friends</label><br>
+                    
+                </div>
+                <div class="choice-container">
+                    <input type="checkbox" id="writing" name="fav_language" value="Writing"> 
+                    <label class="choice-text " for="writing">Writing</label><br>
+                    
+                </div>
+                <div class="choice-container">
+                    <input type="checkbox" id="drawing" name="fav_language" value="Drawing"> 
+                    <label class="choice-text " for="drawing">Drawing</label><br>
+                 </div>
+                 <a href="#" class= "sbtbtn" id ="sbtbtn">Submit</a>
+                    
 
-        <h2 id="question">What do you prefer during your leisure time?</h2>
-
-        <div class="choice-container">
-          <input
-            type="checkbox"
-            id="reading"
-            name="fav_language"
-            value="Reading"
-          />
-          <label class="choice-text" for="reading">Reading</label><br />
-        </div>
-        <div class="choice-container">
-          <input
-            type="checkbox"
-            id="hiking"
-            name="fav_language"
-            value="Hiking"
-          />
-          <label class="choice-text" for="hiking">Hiking</label><br />
-        </div>
-        <div class="choice-container">
-          <input
-            type="checkbox"
-            id="sports"
-            name="fav_language"
-            value="Sports"
-          />
-          <label class="choice-text" for="sports">Play Sports</label><br />
-        </div>
-        <div class="choice-container">
-          <input
-            type="checkbox"
-            id="outing"
-            name="fav_language"
-            value="outing"
-          />
-          <label class="choice-text" for="outing"
-            >Hang out with your friends</label
-          ><br />
-        </div>
-        <div class="choice-container">
-          <input
-            type="checkbox"
-            id="writing"
-            name="fav_language"
-            value="Writing"
-          />
-          <label class="choice-text" for="writing">Writing</label><br />
-        </div>
-        <div class="choice-container">
-          <input
-            type="checkbox"
-            id="drawing"
-            name="fav_language"
-            value="Drawing"
-          />
-          <label class="choice-text" for="drawing">Drawing</label><br />
-        </div>
-
-        <a href="#" class="nextbtn" id="nextbtn">Next Question</a>
-      </div>
-
-      <div class="popup2-content">
-        <img src="close.jpg" alt="Close" class="close2" />
-
-        <h2 id="question">What games do you like to play?</h2>
-
-        <div class="choice-container">
-          <input
-            type="checkbox"
-            id="analytical"
-            name="fav_language"
-            value="Analytical"
-          />
-          <label class="choice-text" for="analytical">Brain games</label><br />
-        </div>
-        <div class="choice-container">
-          <input
-            type="checkbox"
-            id="exploration"
-            name="fav_language"
-            value="Exploration"
-          />
-          <label class="choice-text" for="exploration">Action-adventure</label
-          ><br />
-        </div>
-        <div class="choice-container">
-          <input
-            type="checkbox"
-            id="social"
-            name="fav_language"
-            value="social"
-          />
-          <label class="choice-text" for="social"
-            >Multiplayer online battle arena</label
-          ><br />
-        </div>
-        <div class="choice-container">
-          <input
-            type="checkbox"
-            id="creativity"
-            name="fav_language"
-            value="creativity"
-          />
-          <label class="choice-text" for="creativity">Role-playing</label><br />
-        </div>
-        <div class="choice-container">
-          <input
-            type="checkbox"
-            id="mastery"
-            name="fav_language"
-            value="mastery"
-          />
-          <label class="choice-text" for="mastery">Strategy</label><br />
-        </div>
-
-        <a href="#" class="sbtbtn" id="sbtbtn">Submit</a>
-      </div>
     </div>
+
+    <div class="popup-content">
+      <img src="close.jpg" alt="Close" class="close">
+      
+              <h2 id="question"> Why are you bored?</h2>
+              
+              <div class="choice-container">
+                  <input type="checkbox" id="uninteresting" name="fav_language" value="Analytical"> 
+                  <label class="choice-text " for="analytical">The class is uninteresting</label><br>
+                  
+              </div>
+              <div class="choice-container">
+                  <input type="checkbox" id="syllabus" name="fav_language" value="Exploration"> 
+                  <label class="choice-text " for="exploration">The syllabus is too easy for me</label><br>
+                  
+              </div>
+              <div class="choice-container">
+                  <input type="checkbox" id="dislike" name="fav_language" value="social"> 
+                  <label class="choice-text " for="social">I don't like this subject</label><br>
+                  
+              </div>
+              <div class="choice-container">
+                  <input type="checkbox" id="teacher" name="fav_language" value="creativity"> 
+                  <label class="choice-text " for="creativity">I don't understand what is the teacher teaching about</label><br>
+                  
+              </div>
+              <div class="choice-container">
+                  <input type="checkbox" id="sleep" name="fav_language" value="mastery"> 
+                  <label class="choice-text " for="mastery">I didn't have enough sleep last night</label><br>
+                  
+              </div>
+              <a href="#" class= "nextbtn" id ="nextbtn">Next Question</a>
+               
+              
+
+              
+  </div>
+
+
+
+    
+</div>
   </body>
 </html>
