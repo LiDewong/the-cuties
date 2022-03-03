@@ -158,6 +158,7 @@ button {
   border-radius: 10px;
   margin-bottom: 0px;
   cursor: pointer;
+  margin-left: 70px;
 }
 .class {
   margin-top: 30px;
@@ -207,6 +208,19 @@ h1 {
   box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
 }
 .class:hover {
+  background-image: linear-gradient(
+    to right,
+    #0066ff,
+    #4e95ff,
+    #66a3ff,
+    #86b7ff,
+    #3c8aff,
+    #2079ff,
+    #1170ff,
+    #0066ff
+  );
+  animation: slidebg 2s linear infinite;
+
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
   transform: scale(1.06);
   box-shadow: inset -7px -13px 0px 4px rgba(0, 0, 0, 0.25);
@@ -220,6 +234,18 @@ h1 {
   box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
 }
 .game:hover {
+  background-image: linear-gradient(
+    to right,
+    #0066ff,
+    #4e95ff,
+    #66a3ff,
+    #86b7ff,
+    #3c8aff,
+    #2079ff,
+    #1170ff,
+    #0066ff
+  );
+  animation: slidebg 2s linear infinite;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
   transform: scale(1.06);
   box-shadow: inset -7px -13px 0px 4px rgba(0, 0, 0, 0.25);
@@ -233,6 +259,18 @@ h1 {
   box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
 }
 .todo:hover {
+  background-image: linear-gradient(
+    to right,
+    #0066ff,
+    #4e95ff,
+    #66a3ff,
+    #86b7ff,
+    #3c8aff,
+    #2079ff,
+    #1170ff,
+    #0066ff
+  );
+  animation: slidebg 2s linear infinite;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
   transform: scale(1.06);
   box-shadow: inset -7px -13px 0px 4px rgba(0, 0, 0, 0.25);
@@ -246,7 +284,24 @@ h1 {
   box-shadow: inset -1px -5px 0px 2px rgba(0, 0, 0, 0.25);
 }
 .subject:hover {
+  background-image: linear-gradient(
+    to right,
+    #0066ff,
+    #4e95ff,
+    #66a3ff,
+    #86b7ff,
+    #3c8aff,
+    #2079ff,
+    #1170ff,
+    #0066ff
+  );
+  animation: slidebg 2s linear infinite;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
   transform: scale(1.06);
   box-shadow: inset -7px -13px 0px 4px rgba(0, 0, 0, 0.25);
+}
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
 }
