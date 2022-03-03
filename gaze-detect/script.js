@@ -31,106 +31,263 @@ let number = document.getElementById("number");
 
 let screen1 = document.querySelector("#screen1");
 
-function increment() {
+
+function fireSweetAlert() {
+  Swal.fire({
+      
+      title: 'You are yawning',
+      imageUrl: "blue.png",
+      imageWidth: 97,
+      imageHeight: 150,
+      imageAlt: 'Custom image',
+  })
+}
+
+
+function fireSweetAlert2() {
+  Swal.fire({
+      
+      title: 'You are not paying attention',
+      imageUrl: "blue.png",
+      imageWidth: 97,
+      imageHeight: 150,
+      imageAlt: 'Custom image',
+  })
+}
+
+function fireSweetAlert3() {
+  Swal.fire({
+      
+      title: 'You are sleepy',
+      imageUrl: "blue.png",
+      imageWidth: 97,
+      imageHeight: 150,
+      imageAlt: 'Custom image',
+  })
+}
+
+
+
+const swalWithBootstrapButtons = Swal.mixin({
+  customClass: {
+    confirmButton: 'btn btn-success',
+    cancelButton: 'btn btn-danger'
+  },
+  buttonsStyling: true
+})
+
+function jinggao(){
+    swalWithBootstrapButtons.fire({
+  title: 'We detected you are yawning',
+  text: "Is it very bored? Let's have a chat!",
+  imageUrl: "blue.png",
+  imageWidth: 97,
+  imageHeight: 150,
+  imageAlt: 'Custom image',
+  showCancelButton: false,
+  confirmButtonText: 'OK',
+  cancelButtonText: 'No, cancel!',
+  reverseButtons: true
+}).then((result) => {
+  if (result.isConfirmed) {
+    ok();
+    document.querySelector(".popup").style.display="flex"; 
+    document.querySelector(".popup-content").style.display="inline"; 
+  } else if (
+    /* Read more about handling dismissals below */
+    result.dismiss === Swal.DismissReason.cancel
+  ) {
+    swalWithBootstrapButtons.fire(
+      'Cancelled',
+      'Your imaginary file is safe :)',
+      'error'
+    )
+  }
+})
+}
+
+
+
+function jinggao2(){
+  swalWithBootstrapButtons.fire({
+title: 'You are not paying attention',
+text: "Let's have a chat!",
+imageUrl: "blue.png",
+imageWidth: 97,
+imageHeight: 150,
+imageAlt: 'Custom image',
+showCancelButton: false,
+confirmButtonText: 'OK',
+cancelButtonText: 'No, cancel!',
+reverseButtons: true
+}).then((result) => {
+if (result.isConfirmed) {
+  ok();
+  document.querySelector(".popup").style.display="flex"; 
+  document.querySelector(".popup-content").style.display="inline"; 
+} else if (
+  /* Read more about handling dismissals below */
+  result.dismiss === Swal.DismissReason.cancel
+) {
+  swalWithBootstrapButtons.fire(
+    'Cancelled',
+    'Your imaginary file is safe :)',
+    'error'
+  )
+}
+})
+}
+
+
+
+function jinggao3(){
+  swalWithBootstrapButtons.fire({
+title: 'It seems like you are dozing off',
+text: "Let's play a game!",
+imageUrl: "blue.png",
+imageWidth: 97,
+imageHeight: 150,
+imageAlt: 'Custom image',
+showCancelButton: false,
+confirmButtonText: 'OK',
+cancelButtonText: 'No, cancel!',
+reverseButtons: true
+}).then((result) => {
+if (result.isConfirmed) {
+  window.open("https://lowyanruo.github.io/TowerGame/");
+  
+} else if (
+  /* Read more about handling dismissals below */
+  result.dismiss === Swal.DismissReason.cancel
+) {
+  swalWithBootstrapButtons.fire(
+    'Cancelled',
+    'Your imaginary file is safe :)',
+    'error'
+  )
+}
+})
+}
+
+
+
+
+
+
+
+
+
+
+
+
+function increment(){
   counter++;
-  console.log("Counter1" + counter);
-  if (counter == 2) {
-    console.log("yawn detected");
-    alert("you are yawning!");
+  console.log("Counter1"+ counter);
+  if(counter==3 ){
+    console.log("yawn detected")
+    if(countergame < 1){
+      fireSweetAlert();
+    }
+    
     countergame++;
+
 
     //conversation when yawn
     if (countergame == 1) {
-      countergame = 0;
-      if (confirm("Let's have a chat~")) {
+      jinggao();
+      countergame=0;
+      
         earlimit = 0.0;
         limitlip = 500;
         leftlimit = 100;
         rightlimit = 100;
-        document.getElementById("video").style.display = "none";
+        document.getElementById("video").style.display="none"; 
         //video.removeEventListener('play',());
         //conversation pop up in increment2
+        
+        
+        
+        // document.querySelector(".popup").style.display="flex"; 
+        // document.querySelector(".popup-content").style.display="inline"; 
 
-        ok();
-        document.querySelector(".popup").style.display = "flex";
-        document.querySelector(".popup-content").style.display = "inline";
-      } else {
-        txt = "You pressed Cancel!";
-      }
+      
     }
     counter = 0;
   }
-  // number.value = counter;
+  
+  
 }
 
-var counter2 = 0;
-function increment2() {
+var counter2=0;
+function increment2(){
   counter2++;
-  console.log("Counter2: " + counter2);
-  if (counter2 >= 2) {
-    console.log("inattentiveness detected");
-    alert("you are not paying attention!");
+  console.log("Counter2: " +counter2);
+  if(counter2 >= 5 ){
+    console.log("inattentiveness detected")
+    if(countergame<1){
+      fireSweetAlert2();
+    }
     countergame++;
 
     //conversation when inattentiveness
     if (countergame == 1) {
-      countergame = 0;
-      if (confirm("Let's have a chat~")) {
+      countergame=0;
+      
         earlimit = 0.0;
         limitlip = 500;
         leftlimit = 100;
         rightlimit = 100;
         //conversation pop up in increment2
-        document.getElementById("video").style.display = "none";
-        ok();
+        document.getElementById("video").style.display="none"; 
+       jinggao2();
 
-        document.querySelector(".popup").style.display = "flex";
-        document.querySelector(".popup-content").style.display = "inline";
-      } else {
-        txt = "You pressed Cancel!";
-      }
+      
     }
     counter2 = 0;
+    
   }
   // number.value = counter2;
+  
 }
 
-function closevid() {}
+
 //close eyes increment
-var counter3 = 0;
-function increment3() {
+var counter3=0;
+function increment3(){
   counter3++;
-  console.log("Counter3: " + counter3);
-  if (counter3 >= 2) {
-    console.log("sleepy detected");
-    alert("you are sleepy!");
+  console.log("Counter3: " +counter3);
+  if(counter3 >= 5 ){
+    console.log("sleepy detected")
+    //alert("you are sleepy!")
+    if(countergame<1){
+      fireSweetAlert3();
+    }
     countergame++;
 
     //Game
     if (countergame == 1) {
-      countergame = 0;
-      if (confirm("Do u wanna play a game?")) {
+      countergame=0;
+      
         earlimit = 0.0;
         limitlip = 500;
         leftlimit = 100;
         rightlimit = 100;
-        document.getElementById("video").style.display = "none";
-        setTimeout(function () {
-          document.getElementById("video").style.display = "flex";
+        document.getElementById("video").style.display="none";
+        setTimeout(function(){
+          document.getElementById("video").style.display="flex"; 
           earlimit = 0.27;
-          limitlip = 30;
-          leftlimit = 2.2;
-          rightlimit = 0.78;
-        }, 8000);
+          limitlip=30;
+          leftlimit=2.2; 
+          rightlimit=0.78;
+        },12000);
+        
+        
+        jinggao3();
 
-        window.open("https://lowyanruo.github.io/TowerGame/");
-      } else {
-        txt = "You pressed Cancel!";
-      }
-    }
     counter3 = 0;
   }
   // number.value = counter3;
+}
 }
 
 var countergame = 0;
