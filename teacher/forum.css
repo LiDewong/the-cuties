@@ -68,25 +68,25 @@
   position: relative;
   background: #ffee94;
   margin-top: 50px;
-  color: #ffff;
+  color: rgb(0, 0, 0);
   width: 200px;
 }
 #btn-qna {
   position: relative;
   background: #ffee94;
   margin-top: 20px;
-  color: #ffff;
+  color: rgb(0, 0, 0);
   width: 200px;
 }
 #btn-materials {
   position: relative;
   background: #ffee94;
   margin-top: 20px;
-  color: #ffff;
+  color: rgb(0, 0, 0);
   width: 200px;
 }
 #title {
-  color: #ffff;
+  color: rgb(0, 0, 0);
   background: #ffee94;
   width: 900px;
   font-size: 36px;
