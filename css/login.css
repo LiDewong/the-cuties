@@ -111,3 +111,9 @@ body {
   top: 0px;
   left: 30px;
 }
+.forgot {
+  position: absolute;
+  bottom: 85px;
+  left: 60px;
+  color: black;
+}

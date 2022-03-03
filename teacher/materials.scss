@@ -1,0 +1,6 @@
+.bs-popover-auto[data-popper-placement^="right"] > .popover-arrow::after,
+.bs-popover-end > .popover-arrow::after {
+  left: 1px;
+  border-width: 0.5rem 0.5rem 0.5rem 0;
+  border-right-color: #ffee94;
+}
