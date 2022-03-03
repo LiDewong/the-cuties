@@ -337,3 +337,9 @@ body {
     background-position: 20vw;
   }
 }
+.announc {
+  position: absolute;
+  bottom: 30%;
+
+  left: 45%;
+}
