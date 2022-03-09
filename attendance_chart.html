@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Attendance</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      img {
+        display: block;
+        margin-top: 3%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h1,
+      h4 {
+        text-align: center;
+        font-family: "Baloo 2", cursive;
+      }
+      pre {
+        text-align: center;
+        font-family: "Baloo 2", cursive;
+      }
+      .bar {
+        height: 70%;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      select {
+        font-family: "Baloo 2", cursive;
+        padding: 10px 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: rgba(164, 200, 255, 0.5);
+      }
+      label {
+        margin-left: 42%;
+        font-family: "Baloo 2", cursive;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <img
+      src="css\qsee-student-non-shadow.png"
+      alt="QSEE"
+      style="width: 8%; height: 8%"
+    />
+    <h1>Child's Attendance</h1>
+    <pre
+      style="font-size: 120%"
+    ><b>ID:</b> 001      <b>Class:</b> 3 Mutiara</pre>
+    <h4><i>2022</i></h4>
+    <div class="bar">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <label for="month">Attendance :</label>
+
+    <select name="month" id="month" onchange="location = this.value;">
+      <option>- month -</option>
+      <option value="attendance.html">January</option>
+      <option value="attendance.html">February</option>
+    </select>
+
+    <script>
+      const labels = ["Present", "Late", "Absent"];
+      const data = {
+        labels: labels,
+        datasets: [
+          {
+            label: "January",
+            barPercentage: 0.5,
+            barThickness: 60,
+            data: [40, 3, 1],
+            backgroundColor: ["rgba(110, 202, 250, 0.8)"],
+            borderColor: ["rgb(110, 202, 250)"],
+            borderWidth: 1,
+          },
+          {
+            label: "February",
+            barPercentage: 0.5,
+            barThickness: 60,
+            data: [39, 3, 2],
+            backgroundColor: ["rgba(255, 159, 64, 0.8)"],
+            borderColor: ["rgb(255, 159, 64)"],
+            borderWidth: 1,
+          },
+        ],
+      };
+
+      const config = {
+        type: "bar",
+        data: data,
+        options: {
+          plugins: {
+            tooltip: {
+              callbacks: {
+                body: function (context) {
+                  return `${dataset[0].label}`;
+                },
+                footer: function (context) {
+                  console.log(context[0].dataset.label);
+                  if (context[0].dataset.label == "January") {
+                    if (context[0].label == "Late") {
+                      const lateArray = [
+                        "12 --- Maths",
+                        "17 --- ICT",
+                        "28 --- Music",
+                      ];
+                      return lateArray;
+                    } else if (context[0].label == "Absent") {
+                      const absentArray = ["31 --- ICT"];
+                      return absentArray;
+                    }
+                  } else if (context[0].dataset.label == "February") {
+                    if (context[0].label == "Late") {
+                      const lateArray1 = [
+                        "9 --- Maths",
+                        "14 --- ICT",
+                        "28 --- ICT",
+                      ];
+                      return lateArray1;
+                    } else if (context[0].label == "Absent") {
+                      const absentArray1 = ["21 --- Maths", "23 --- Arts"];
+                      return absentArray1;
+                    }
+                  }
+                },
+              },
+            },
+          },
+          responsive: true,
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      };
+    </script>
+
+    <script>
+      Chart.defaults.font.family = "'Baloo 2', cursive";
+      const myChart = new Chart(document.getElementById("myChart"), config);
+    </script>
+  </body>
+</html>
