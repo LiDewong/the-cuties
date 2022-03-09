@@ -37,10 +37,19 @@
         font-family: "Baloo 2", cursive;
         align-items: center;
       }
+      .back {
+        color: #161616;
+        font-family: "Baloo 2", cursive;
+        font-size: 28px;
+        position: absolute;
+        top: 0px;
+        left: 30px;
+      }
     </style>
   </head>
 
   <body>
+    <a href="parent-dashboard.html" class="back"> Back</a>
     <img
       src="css\qsee-student-non-shadow.png"
       alt="QSEE"
@@ -58,9 +67,9 @@
     <label for="month">Attendance :</label>
 
     <select name="month" id="month" onchange="location = this.value;">
-      <option>- month -</option>
-      <option value="attendance.html">January</option>
-      <option value="attendance.html">February</option>
+      <option value="attendance_chart.html">- month -</option>
+      <option value="attendance_jan.html">January</option>
+      <option value="attendance_feb.html">February</option>
     </select>
 
     <script>
