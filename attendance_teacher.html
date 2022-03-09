@@ -1,300 +1,273 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Attendance</title>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <style>
-            img
-            {
-                display:block;
-                margin-top: 3%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            h1,h4
-            {
-                text-align: center;
-                font-family: "Baloo 2", cursive;
-            }
-            .sc{
-                height:70%; 
-                width:50%;
-                margin-left: auto;
-                margin-right: auto;
-                padding: 0.5cm;
-            }
-            .math{
-                height:70%; 
-                width:50%;
-                margin-left: auto;
-                margin-right: auto;
-                padding: 0.5cm;
-            }
-            .eng{
-                height:70%; 
-                width:50%;
-                margin-left: auto;
-                margin-right: auto;
-                padding: 0.5cm;
-            }
-        </style>
-    </head>
+  <head>
+    <title>Attendance</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      img {
+        display: block;
+        margin-top: 3%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h1,
+      h4 {
+        text-align: center;
+        font-family: "Baloo 2", cursive;
+      }
+      .sc {
+        height: 70%;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.5cm;
+      }
+      .math {
+        height: 70%;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.5cm;
+      }
+      .eng {
+        height: 70%;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.5cm;
+      }
+      .back {
+        color: #161616;
+        font-family: "Baloo 2", cursive;
+        font-size: 28px;
+        position: absolute;
+        top: 0px;
+        left: 30px;
+      }
+    </style>
+  </head>
 
-    <body>
-        <img src="teacher.png" alt="QSEE" style="width:8%; height:8%;">
-        <h1>Students' Attendance</h1>
-        <h4><i>January 2022</i></h4>
-        <div class="sc">
-            <canvas id="myChartsc"></canvas>
-        </div>
-        <div class="math">
-            <canvas id="myChartmath"></canvas>
-        </div>
-        <div class="eng">
-            <canvas id="myCharteng"></canvas>
-        </div>
+  <body>
+    <a href="teacher-dashboard.html" class="back"> Back</a>
+    <img
+      src="css\qsee-teacher-non-shadow.png"
+      alt="QSEE"
+      style="width: 8%; height: 8%"
+    />
+    <h1>Students' Attendance</h1>
+    <h4><i>January 2022</i></h4>
+    <div class="sc">
+      <canvas id="myChartsc"></canvas>
+    </div>
+    <div class="math">
+      <canvas id="myChartmath"></canvas>
+    </div>
+    <div class="eng">
+      <canvas id="myCharteng"></canvas>
+    </div>
 
-        <script>
-            const labels = [
-                '1 Bestari', '3 Harmoni', '3 Mutiara', '3 Cemerlang'
-            ]
-            const data = {
-            labels: labels,
-            datasets: [{
-                label:'Present',
-                barPercentage: 0.5,
-                barThickness: 60,
-                data: [28.750,22.500,27.125,29.000],
-                backgroundColor: [
-                'rgb(164, 200, 255)'
-                ],
-                borderColor: [
-                'rgb(164, 200, 255)'
-                ],
-                borderWidth: 1
+    <script>
+      const labels = ["1 Bestari", "3 Harmoni", "3 Mutiara", "3 Cemerlang"];
+      const data = {
+        labels: labels,
+        datasets: [
+          {
+            label: "Present",
+            barPercentage: 0.5,
+            barThickness: 60,
+            data: [28.75, 22.5, 27.125, 29.0],
+            backgroundColor: ["rgb(164, 200, 255)"],
+            borderColor: ["rgb(164, 200, 255)"],
+            borderWidth: 1,
+          },
+          {
+            label: "Late",
+            barPercentage: 0.5,
+            barThickness: 60,
+            data: [0.625, 1.875, 0.5, 0.75],
+            backgroundColor: ["rgb(255, 241, 168)"],
+            borderColor: ["rgb(255, 241, 168)"],
+            borderWidth: 1,
+          },
+          {
+            label: "Absent",
+            barPercentage: 0.5,
+            barThickness: 60,
+            data: [0.375, 0.625, 0.375, 0.25],
+            backgroundColor: ["rgb(255, 145, 145)"],
+            borderColor: ["rgb(255, 145, 145)"],
+            borderWidth: 1,
+          },
+        ],
+      };
+
+      const config = {
+        type: "bar",
+        data: data,
+        options: {
+          plugins: {
+            title: {
+              display: true,
+              text: "Science",
+              font: {
+                size: 18,
+              },
             },
-            {
-                label:'Late',
-                barPercentage: 0.5,
-                barThickness: 60,
-                data: [0.625,1.875,0.500,0.750],
-                backgroundColor: [
-                'rgb(255, 241, 168)'
-                ],
-                borderColor: [
-                'rgb(255, 241, 168)'
-                ],
-                borderWidth: 1
+          },
+          responsive: true,
+          scales: {
+            x: {
+              stacked: true,
             },
-            {
-                label:'Absent',
-                barPercentage: 0.5,
-                barThickness: 60,
-                data: [0.375,0.625,0.375,0.250],
-                backgroundColor: [
-                'rgb(255, 145, 145)'
-                ],
-                borderColor: [
-                'rgb(255, 145, 145)'
-                ],
-                borderWidth: 1 
-            }]
-            };
-
-            const config = {
-            type: 'bar',
-            data: data,
-            options: {
-                plugins: {
-                    title: {
-                        display: true,
-                        text: 'Science',
-                        font:{
-                            size: 18
-                        }
-                    },
-                },
-                responsive: true,
-                scales: {
-                    x: {
-                        stacked: true,
-                    },
-                    y: {
-                        stacked : true,
-                    }
-                }
+            y: {
+              stacked: true,
             },
-            };
-        </script>
+          },
+        },
+      };
+    </script>
 
-        <script>
-            Chart.defaults.font.family = "'Baloo 2', cursive";
-            const myChart = new Chart(
-            document.getElementById('myChartsc'),
-            config
-            );         
-        </script>
+    <script>
+      Chart.defaults.font.family = "'Baloo 2', cursive";
+      const myChart = new Chart(document.getElementById("myChartsc"), config);
+    </script>
 
-        <script>
-            const labels2 = [
-            '2 Bestari','3 Mutiara', '3 Cemerlang'
-            ]
-            const data2 = {
-            labels: labels2,
-            datasets: [{
-                label:'Present',
-                barPercentage: 0.5,
-                barThickness: 60,
-                data: [25.500,26.750,29.125],
-                backgroundColor: [
-                'rgb(164, 200, 255)'
-                ],
-                borderColor: [
-                'rgb(164, 200, 255)'
-                ],
-                borderWidth: 1
+    <script>
+      const labels2 = ["2 Bestari", "3 Mutiara", "3 Cemerlang"];
+      const data2 = {
+        labels: labels2,
+        datasets: [
+          {
+            label: "Present",
+            barPercentage: 0.5,
+            barThickness: 60,
+            data: [25.5, 26.75, 29.125],
+            backgroundColor: ["rgb(164, 200, 255)"],
+            borderColor: ["rgb(164, 200, 255)"],
+            borderWidth: 1,
+          },
+          {
+            label: "Late",
+            barPercentage: 0.5,
+            barThickness: 60,
+            data: [0.625, 0.625, 0.5],
+            backgroundColor: ["rgb(255, 241, 168)"],
+            borderColor: ["rgb(255, 241, 168)"],
+            borderWidth: 1,
+          },
+          {
+            label: "Absent",
+            barPercentage: 0.5,
+            barThickness: 60,
+            data: [0.625, 0.5, 0.375],
+            backgroundColor: ["rgb(255, 145, 145)"],
+            borderColor: ["rgb(255, 145, 145)"],
+            borderWidth: 1,
+          },
+        ],
+      };
+
+      const config2 = {
+        type: "bar",
+        data: data2,
+        options: {
+          plugins: {
+            title: {
+              display: true,
+              text: "Mathematics",
+              font: {
+                size: 18,
+              },
             },
-            {
-                label:'Late',
-                barPercentage: 0.5,
-                barThickness: 60,
-                data: [0.625,0.625,0.500],
-                backgroundColor: [
-                'rgb(255, 241, 168)'
-                ],
-                borderColor: [
-                'rgb(255, 241, 168)'
-                ],
-                borderWidth: 1
+          },
+          responsive: true,
+          scales: {
+            x: {
+              stacked: true,
             },
-            {
-                label:'Absent',
-                barPercentage: 0.5,
-                barThickness: 60,
-                data: [0.625,0.500,0.375],
-                backgroundColor: [
-                'rgb(255, 145, 145)'
-                ],
-                borderColor: [
-                'rgb(255, 145, 145)'
-                ],
-                borderWidth: 1 
-            }]
-            };
-
-            const config2 = {
-            type: 'bar',
-            data: data2,
-            options: {
-                plugins: {
-                    title: {
-                        display: true,
-                        text: 'Mathematics',
-                        font:{
-                            size: 18
-                        }
-                    },
-                },
-                responsive: true,
-                scales: {
-                    x: {
-                        stacked: true,
-                    },
-                    y: {
-                        stacked : true,
-                    }
-                }
+            y: {
+              stacked: true,
             },
-            };
-        </script>
+          },
+        },
+      };
+    </script>
 
-        <script>
-            Chart.defaults.font.family = "'Baloo 2', cursive";
-            const myChart2 = new Chart(
-            document.getElementById('myChartmath'),
-            config2
-            );         
-        </script>
+    <script>
+      Chart.defaults.font.family = "'Baloo 2', cursive";
+      const myChart2 = new Chart(
+        document.getElementById("myChartmath"),
+        config2
+      );
+    </script>
 
-        <script>
-            const labels3 = [
-            '1 Bestari','1 Harmoni', '2 Cemerlang'
-            ]
-            const data3 = {
-            labels: labels3,
-            datasets: [{
-                label:'Present',
-                barPercentage: 0.5,
-                barThickness: 60,
-                data: [25.500,26.250,24.125],
-                backgroundColor: [
-                'rgb(164, 200, 255)'
-                ],
-                borderColor: [
-                'rgb(164, 200, 255)'
-                ],
-                borderWidth: 1
+    <script>
+      const labels3 = ["1 Bestari", "1 Harmoni", "2 Cemerlang"];
+      const data3 = {
+        labels: labels3,
+        datasets: [
+          {
+            label: "Present",
+            barPercentage: 0.5,
+            barThickness: 60,
+            data: [25.5, 26.25, 24.125],
+            backgroundColor: ["rgb(164, 200, 255)"],
+            borderColor: ["rgb(164, 200, 255)"],
+            borderWidth: 1,
+          },
+          {
+            label: "Late",
+            barPercentage: 0.5,
+            barThickness: 60,
+            data: [3.5, 1.25, 1.125],
+            backgroundColor: ["rgb(255, 241, 168)"],
+            borderColor: ["rgb(255, 241, 168)"],
+            borderWidth: 1,
+          },
+          {
+            label: "Absent",
+            barPercentage: 0.5,
+            barThickness: 60,
+            data: [1.0, 0.5, 0.75],
+            backgroundColor: ["rgb(255, 145, 145)"],
+            borderColor: ["rgb(255, 145, 145)"],
+            borderWidth: 1,
+          },
+        ],
+      };
+
+      const config3 = {
+        type: "bar",
+        data: data3,
+        options: {
+          plugins: {
+            title: {
+              display: true,
+              text: "English",
+              font: {
+                size: 18,
+              },
             },
-            {
-                label:'Late',
-                barPercentage: 0.5,
-                barThickness: 60,
-                data: [3.500,1.250,1.125],
-                backgroundColor: [
-                'rgb(255, 241, 168)'
-                ],
-                borderColor: [
-                'rgb(255, 241, 168)'
-                ],
-                borderWidth: 1
+          },
+          responsive: true,
+          scales: {
+            x: {
+              stacked: true,
             },
-            {
-                label:'Absent',
-                barPercentage: 0.5,
-                barThickness: 60,
-                data: [1.000,0.500,0.750],
-                backgroundColor: [
-                'rgb(255, 145, 145)'
-                ],
-                borderColor: [
-                'rgb(255, 145, 145)'
-                ],
-                borderWidth: 1 
-            }]
-            };
-
-            const config3 = {
-            type: 'bar',
-            data: data3,
-            options: {
-                plugins: {
-                    title: {
-                        display: true,
-                        text: 'English',
-                        font:{
-                            size: 18
-                        }
-                    },
-                },
-                responsive: true,
-                scales: {
-                    x: {
-                        stacked: true,
-                    },
-                    y: {
-                        stacked : true,
-                    }
-                }
+            y: {
+              stacked: true,
             },
-            };
-        </script>
+          },
+        },
+      };
+    </script>
 
-        <script>
-            Chart.defaults.font.family = "'Baloo 2', cursive";
-            const myChart3 = new Chart(
-            document.getElementById('myCharteng'),
-            config3
-            );         
-        </script>
-    </body>
+    <script>
+      Chart.defaults.font.family = "'Baloo 2', cursive";
+      const myChart3 = new Chart(
+        document.getElementById("myCharteng"),
+        config3
+      );
+    </script>
+  </body>
 </html>
