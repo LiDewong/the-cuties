@@ -81,7 +81,10 @@
         top: 0px;
         left: 30px;
         }
-
+.talk{
+    background: url("img\speaker-high-volume_1f50a.png")
+    width: 100px;
+}
 
 
 
@@ -132,6 +135,7 @@
                 <b>Mastery </b>
                 <p>The ability to continuously strive to achieve and improve upon one’s skills until a standard of excellence is achieved through repetition and practice, despite the absence of physical rewards.</p>
                 <br> 
+                <button class="talk">
             </div>
         </div>
         <br>
@@ -288,7 +292,57 @@
             
             
         });
+// the text to speech part
+   // The JavaScript Part Starts
+        const btn = document.querySelector(".talk");
+        const content = document.querySelector(".voice");
 
+        const report = ["opening report sir"];
+        const attendance = ["opening attendance sir"];
+        const SpeechRecognition =
+          window.SpeechRecognition || window.webkitSpeechRecognition;
+        const recognition = new SpeechRecognition();
+
+        recognition.onstart = function () {
+          console.log("How Can I Help You ?");
+        };
+        recognition.onresult = function (event) {
+          const current = event.resultIndex;
+
+          const transcript = event.results[current][0].transcript;
+          content.textContent = transcript;
+          readOutLoud(transcript);
+        };
+
+        btn.addEventListener("click", () => {
+          recognition.start();
+        });
+
+        function readOutLoud(message) {
+          const speech = new SpeechSynthesisUtterance();
+
+          speech.text = "I am not able to understand ,sir";
+
+          if (message.includes("report")) {
+            const finalText = report[Math.floor(Math.random() * report.length)];
+            speech.text = finalText;
+            window.open("report.html");
+          }
+
+          if (message.includes("attendance")) {
+            const finalText =
+              attendance[Math.floor(Math.random() * attendance.length)];
+            speech.text = finalText;
+            window.open(
+              "attendance_chart.html"
+            );
+          }
+          speech.volume = 1;
+          speech.rate = 1.1;
+          speech.pitch = 1;
+
+          window.speechSynthesis.speak(speech);
+        }
     </script>
 
     
