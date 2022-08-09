@@ -149,7 +149,7 @@ function jinggao3() {
     })
     .then((result) => {
       if (result.isConfirmed) {
-        window.open("https://lowyanruo.github.io/TowerGame/");
+        window.open("https://yanrouu.github.io/TowerGame/");
       } else if (
         /* Read more about handling dismissals below */
         result.dismiss === Swal.DismissReason.cancel
