@@ -244,10 +244,10 @@ p {
 }
 #video {
   position: absolute;
-  width: 1000px;
-  height: 600px;
+  width: 665px;
+  height: 500px;
   left: 460px;
-  top: 295px;
+  top: 195px;
 
   background: #000000;
 }
@@ -317,8 +317,6 @@ p {
   border: #a4c8ff;
 }
 body {
-  width: 1240px;
-  height: 1080px;
   margin: 0px;
   padding: 0px;
 
