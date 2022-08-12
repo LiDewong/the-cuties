@@ -244,11 +244,12 @@ p {
 }
 #video {
   position: absolute;
-  border-radius: 95px;
-  top: 25%;
-  left: 25%;
-  margin: 0px;
-  padding: 0px;
+  width: 1000px;
+  height: 600px;
+  left: 460px;
+  top: 295px;
+
+  background: #000000;
 }
 .upper {
   background: #a4c8ff;
@@ -316,6 +317,8 @@ p {
   border: #a4c8ff;
 }
 body {
+  width: 1240px;
+  height: 1080px;
   margin: 0px;
   padding: 0px;
 
