@@ -40,22 +40,91 @@
       }
       .title{
         position: absolute;
-width: 260px;
-height: 134px;
-left: 1298px;
-top: -10px;
+/* width: 260px; */
+height: 72px;
+left: 700px;
+top: 10px;
 font-family: 'Schoolbell', cursive;
 
 font-style: normal;
 font-weight: 400;
 font-size: 96px;
-line-height: 134px;
+/* line-height: 134px; */
 /* identical to box height */
 
 text-align: center;
 
 color: #656565;
 
+      }
+      .logo{
+        position: absolute;
+    height: 78px;
+   
+    left: 1320px;
+top: 40px;
+      }
+      .bluesquare1{
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        left: 120px;
+        top: 50px
+      }
+      .bluesquare2{
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        left: 120px;
+        top: 250px
+      }
+      .bluesquare3{
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        left: 120px;
+        top: 450px
+      }
+      .bluesquare4{
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        left: 120px;
+        top: 650px
+      }
+      .qsee1{
+        position: absolute;
+        z-index: +1;
+        height: 180px;
+        left: 105px;
+        top : 30px;
+      }
+      .qsee2{
+        position: absolute;
+        z-index: +1;
+        height: 180px;
+        left: 105px;
+        top : 230px;
+      }
+      .qsee3{
+        position: absolute;
+        z-index: +1;
+        height: 180px;
+        left: 105px;
+        top : 430px;
+      }
+      .qsee4{
+        position: absolute;
+        z-index: +1;
+        height: 180px;
+        left: 105px;
+        top : 630px;
+      }
+      .comment{
+        position:absolute;
+        height: 70px;
+        right:80px;
+        top: 740px;
       }
     </style>
   </head>
@@ -83,11 +152,29 @@ color: #656565;
     <!-- <a href="..\pickrole.html"><button class="home"></button> </a>
     <center> -->
       <h1 class="title">Live Classroom</h1>
+      <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M592 0h-384C181.5 0 160 22.25 160 49.63V96c23.42 0 45.1 6.781 63.1 17.81V64h352v288h-64V304c0-8.838-7.164-16-16-16h-96c-8.836 0-16 7.162-16 16V352H287.3c22.07 16.48 39.54 38.5 50.76 64h253.9C618.5 416 640 393.8 640 366.4V49.63C640 22.25 618.5 0 592 0zM160 320c53.02 0 96-42.98 96-96c0-53.02-42.98-96-96-96C106.1 128 64 170.1 64 224C64 277 106.1 320 160 320zM192 352H128c-70.69 0-128 57.31-128 128c0 17.67 14.33 32 32 32h256c17.67 0 32-14.33 32-32C320 409.3 262.7 352 192 352z"/></svg>
+      <svg class="bluesquare1" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="200" height="200" fill="#91CCF4"/>
+</svg>
+ <svg class="bluesquare2" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="200" height="200" fill="#91CCF4"/>
+</svg>
+ <svg class="bluesquare3" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="200" height="200" fill="#91CCF4"/>
+</svg>
+ <svg class="bluesquare4" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="200" height="200" fill="#91CCF4"/>
+</svg>
+<img class="qsee1" src="..\img\qseee-modified.png">
+<img class="qsee2" src="..\img\qseee-modified.png">
+<img class="qsee3" src="..\img\qseee-modified.png">
+<img class="qsee4" src="..\img\qseee-modified.png">
+
       <div class="video">
         <video id="video" width="700" height="530" autoplay muted></video>
       </div>
-      <img src="..\qtee.png" class="qtee" />
-      <img src="..\css\qsee-student-non-shadow.png" class="qsee" />
+      <!-- <img src="..\qtee.png" class="qtee" />
+      <img src="..\css\qsee-student-non-shadow.png" class="qsee" /> -->
     </center>
     <!--input type="text" id="number" value="0"/-->
 
@@ -224,5 +311,6 @@ color: #656565;
         <a href="#" class="nextbtn" id="nextbtn">Next Question</a>
       </div>
     </div>
+    <svg class="comment" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 176C416 78.8 322.9 0 208 0S0 78.8 0 176c0 39.57 15.62 75.96 41.67 105.4c-16.39 32.76-39.23 57.32-39.59 57.68c-2.1 2.205-2.67 5.475-1.441 8.354C1.9 350.3 4.602 352 7.66 352c38.35 0 70.76-11.12 95.74-24.04C134.2 343.1 169.8 352 208 352C322.9 352 416 273.2 416 176zM599.6 443.7C624.8 413.9 640 376.6 640 336C640 238.8 554 160 448 160c-.3145 0-.6191 .041-.9336 .043C447.5 165.3 448 170.6 448 176c0 98.62-79.68 181.2-186.1 202.5C282.7 455.1 357.1 512 448 512c33.69 0 65.32-8.008 92.85-21.98C565.2 502 596.1 512 632.3 512c3.059 0 5.76-1.725 7.02-4.605c1.229-2.879 .6582-6.148-1.441-8.354C637.6 498.7 615.9 475.3 599.6 443.7z"/></svg>
   </body>
 </html>
