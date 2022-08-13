@@ -183,11 +183,13 @@ p {
   font-size: 80%;
   border: 0.1rem solid rgba(125, 189, 233, 1);
   background-color: rgba(125, 189, 233, 1);
+  border-radius: 5px;
 }
 
 .choice-container:hover {
   cursor: pointer;
   box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  border-radius: 5px;
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
