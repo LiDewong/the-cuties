@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychological report</title>
+    <link rel="icon" href="css\qsee-parent-non-shadow.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <link rel="stylesheet" href="report.css"> -->
+    <style>
+        body {
+            width: 100%;
+        }
+        .logo {
+            position: absolute;
+            height: 200px;
+            padding: 2%;
+            padding-left: 3%;
+            padding-right: 3%;
+            background: #F98988;
+        }
+        .title {
+            margin-top: 3%;
+            margin-left: 10%;
+            position: relative;
+            font-family: 'Schoolbell', cursive;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 45px;
+            line-height: 134px;
+            text-align: end;
+            color: #656565;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon {
+            padding-left: 2.5%;
+            position: relative;
+            height: 100px;
+            width: auto;
+        }
+        .info {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-top: -3%;
+            margin-bottom: -3%;
+        }
+        pre{
+            font-family: 'Schoolbell', cursive;
+            font-style: normal;
+        }
+        .chartCard {
+            width: 100%;
+            height: calc(100vh-40px);
+            background: rgba(255, 26, 104, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .chart_container {
+            justify-content: center;
+            display: flex;
+        }
+        .chartBox {
+            font-family: 'Schoolbell', cursive;
+            font-style: normal;
+            font-weight: 400;
+            width: 80%;
+            margin: 2.5%;
+            padding: 1.5%;
+            border-radius: 20px;
+            border: solid 2px rgba(100, 26, 104, 1);
+            background: white;
+        }
+        .chart_container:first-child{
+            margin-top: 40vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="title">
+        <img class="logo" src="QSEE parent 2.png" alt="QSEE" style="height: 100%; position:absolute; left: -75px;">
+        Educational Psychology Assessment Report
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+                d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z" />
+        </svg>
+    </h1>
+
+    <div class="info">
+        <pre style="font-size: 35px;"><b>ID:</b> 001      <b>Class:</b> 3 Mutiara</pre>
+    </div>
+
+    </div class="chartCard">
+    <div class="chart_container">
+        <div class="chartBox">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="chartBox">
+            <canvas id="doughnutChart"></canvas>
+        </div>
+    </div>
+    <!-- <br> -->
+    <!-- <div class="chart_container">
+    </div>
+    <br> -->
+    <div class="chart_container">
+        <div class="chartBox">
+            <b>Strengths and Weakness</b>
+            <p>Based on the analysis of the data above, we notice that your kid's Mastery skill is higher than all of the
+                above skills. On the contrary, your kid has to improve his exploration skill to have a well-rounded skillset.
+            </p>
+            <br>
+            <b>Gifts and Talents</b>
+            <p>Your kid has a desire to become competent at a tast. Kids with high mastery orientation stand out and parents
+                don't have to coax him to learn. </p>
+            <br>
+            <b>Nature</b>
+            <p>Students with mastery orientation believe that intelligence can be nurtured and developed. Such students
+                are likely to earn better grades, even in the face of trouble.</p>
+            <br>
+            <b>Advice for Parents</b>
+            <p>Mastery orientation can be encouraged through positive parenting techniques and parental involvement in
+                education. You should praise your kid's effort when your kid excel at a lesson and offer constructive
+                criticism when he work shows room for improvement </p>
+            <br>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ["Language", "Math", "Science", "ICT", "Arts", "Music"],
+                datasets: [{
+                    label: "Strength",
+                    fontSize: 20,
+                    backgroundColor: 'rgba(90, 158, 204, 0.5)',
+                    borderColor: 'rgba(90, 158, 204, 0.9)',
+                    data: [41.67, 21.86, 29.16, 41.66, 37.5, 20.83],
+                }, {
+                    label: "Interest",
+                    backgroundColor: 'rgba(255, 220, 85, 0.7)',
+                    borderWidth: 2,
+                    borderColor: 'rgba(255, 220, 85, 1)',
+                    data: [49.41, 21.87, 29.16, 31.26, 50.57, 5.78],
+                }]
+            },
+
+            options: {
+                title: {
+                    display: true,
+                    text: ['Evaluation of Kid\'s Strengths and Interest'],
+                    fontSize: 30,
+                    fontFamily: "'Schoolbell', cursive",
+                    fontStyle: 'normal',
+                    fontColor: '#000000',
+                },
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        fontSize: 20,
+                        fontFamily: "'Schoolbell', cursive",
+                        fontStyle: 'normal',
+                        fontColor: '#000000',
+                    }
+                },
+                scale: {
+                    pointLabels: {
+                        fontSize: 15,
+                        fontFamily: "'Schoolbell', cursive",
+                        fontStyle: 'normal',
+                        fontColor: '#000000',
+                    },
+                },
+            }
+        });
+
+
+
+        var ctx = document.getElementById('doughnutChart').getContext('2d');
+        var doughnutChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Analytical',
+                    'Creativity',
+                    'Exploration',
+                    'Competiveness',
+                    'Social',
+                    'Mastery'],
+                datasets: [{
+                    label: 'Kid\'s Personality Type',
+                    backgroundColor: [
+                        'rgba(255, 153, 182, 1)',
+                        'rgba(255, 173, 199, 1)',
+                        'rgba(255, 194, 226, 1)',
+                        'rgba(202, 173, 255, 1)',
+                        'rgba(175, 153, 255, 1)',
+                        'rgba(159, 139, 232, 1)',
+                    ],
+                    borderColor: [
+                        'rgba(255, 153, 182, 1)',
+                        'rgba(255, 173, 199, 1)',
+                        'rgba(255, 194, 226, 1)',
+                        'rgba(202, 173, 255, 1)',
+                        'rgba(175, 153, 255, 1)',
+                        'rgba(159, 139, 232, 1)',
+                    ],
+                    data: [23, 20, 8, 13, 10, 26],
+                }]
+
+            },
+            options: {
+                radius: '50%',
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        fontSize: 20,
+                        fontFamily: "'Schoolbell', cursive",
+                        fontStyle: 'normal',
+                        fontColor: '#000000',
+                    }
+                },
+                tooltips:{
+                    enabled: true,
+                    fontFamily: "'Schoolbell', cursive",
+                    fontStyle: 'normal',
+                    fontSize: 50,
+                    callbacks:{
+                        footer(context){
+                            if (context[0].index == 0) {
+                                var desc = ["The ability to collect and analyse data,",
+                                "solve a particular problem," ,
+                                "and make decisions on the",
+                                "basis of available information."];
+                            } else if (context[0].index == 1){
+                                desc = ["The ability to think about",
+                                 "a task or a problem in a new or different way,",
+                                 "or the ability to use the imagination to generate new ideas."];
+                            } else if (context[0].index == 2){
+                                desc = ["The ability to search for the purpose of",
+                                 "discovery of information or resources;",
+                                 "explore or investigate the unknown regions."];
+                            } else if (context[0].index == 3){
+                                desc = ["The ability to strive for the same object, position,",
+                                "or reward that another person is striving for."];
+                            } else if (context[0].index == 4){
+                                desc = ["The ability to display good manners,",
+                                "communicate effectively with others, ",
+                                "being considerate of the feelings of others and express personal needs."];
+                            } else if (context[0].index == 5){
+                                desc = ["The ability to continuously strive to",
+                                "achieve and improve upon one’s skills until",
+                                "a standard of excellence is achieved through repetition and practice,",
+                                "despite the absence of physical rewards."];
+                            }
+                            return desc;
+                        }
+
+                    },
+                },
+
+                title: {
+                    display: true,
+                    text: 'Kid\'s Skillset',
+                    fontFamily: "'Schoolbell', cursive",
+                    fontStyle: 'normal',
+                    fontColor: '#000000',
+                    fontSize: 35,
+                },
+            },
+        });
+
+    </script>
+
+
+</body>
+
+</html>
