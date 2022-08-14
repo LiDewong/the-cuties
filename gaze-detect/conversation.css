@@ -184,6 +184,7 @@ p {
   height: 10%;
   font-size: 150%;
   font-family: 'Schoolbell', cursive;
+  font-style: bold;
   border: 0.1rem solid rgba(125, 189, 233, 1);
   background-color: rgba(125, 189, 233, 1);
   border-radius: 10px;
@@ -206,6 +207,7 @@ p {
 .choice-text {
   padding: 1.0rem;
   font-size: 150%;
+  font-style: bold;
 }
 
 .nextbtn {
