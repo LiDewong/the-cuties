@@ -26,7 +26,7 @@ h1 > span {
 } */
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.4rem;
   margin-bottom: 4rem;
   font-weight: 700;
 }
@@ -125,7 +125,7 @@ h2 {
   font-family: 'Schoolbell', cursive;
 }
 .question{
-  margin-bottom: -5%;
+  margin-bottom: -2%;
 }
 .popup-content {
   height: 80%;
@@ -214,7 +214,7 @@ p {
 
 .nextbtn {
   margin-top: 20%;
-  font-size: 200%;
+  font-size: 150%;
   width: 20rem;
   text-align: center;
   font-family: 'Schoolbell', cursive;
@@ -239,7 +239,7 @@ p {
 
 .sbtbtn {
   margin-top: 20%;
-  font-size: 100%;
+  font-size: 150%;
   width: 20rem;
   text-align: center;
   font-family: 'Schoolbell', cursive;
