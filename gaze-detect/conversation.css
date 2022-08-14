@@ -218,7 +218,7 @@ p {
 
 .nextbtn:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   transform: translateY(-0.1rem);
   transition: transform 150ms;
@@ -238,7 +238,7 @@ p {
 
 .sbtbtn:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   transform: translateY(-0.1rem);
   transition: transform 150ms;
