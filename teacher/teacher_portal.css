@@ -75,6 +75,24 @@ body {
 
   background: #ffffff;
 }
+.white2 {
+  position: absolute;
+  width: 130px;
+  height: 145px;
+  left: 220px;
+  top: 0px;
+
+  background: #ffffff;
+}
+.white3 {
+  position: absolute;
+  width: 130px;
+  height: 145px;
+  left: 370px;
+  top: 0px;
+
+  background: #ffffff;
+}
 .title {
   position: absolute;
   /* width: 260px; */
