@@ -4,6 +4,13 @@
   width: 100%;
   height: 128px; 
 } */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Schoolbell", cursive;
+} */
 body {
   position: absolute;
   background-image: url("Group 10.png");
@@ -28,83 +35,166 @@ body {
   background: linear-gradient(180deg, #000000 0%, #00b2ff 100%);
   border-radius: 52px; */
 }
-.background {
-}
-.rightcorner {
-  position: absolute;
-  width: 436px;
-  height: 50px;
-  left: 1395px;
-  top: 62px;
-}
-.layer {
-  background-color: rgba(255, 255, 255, 0.251);
+header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  padding: 20px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  position: relative;
+  max-width: 80px;
+}
+
+header ul {
+  position: absolute;
+  left: 1000px;
+
+  font-family: "Schoolbell", cursive;
+  /* font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 56px; */
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-decoration-line: underline;
+
+  color: #ffffff;
+  /* position: absolute;
+  left: 950px;
+  display: flex; */
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  display: inline-block;
+  color: #333;
+  font-size: 30px;
+  margin-left: 80px;
+  text-decoration: none;
+}
+.underline {
+  text-decoration-line: underline;
 }
 .loginbox {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 673px;
+  height: 457px;
+  left: 435px;
+  top: 231px;
+
+  background: rgba(241, 241, 241, 0.3);
+  border: 1px solid #ffffff;
+  backdrop-filter: blur(40px);
   /* witdth: 320px;
   height: 420px;
   width: 761px;
   height: 541px; */
-  position: relative;
+  /* position: relative;
   width: 509px;
-  height: 450px;
+  height: 450px; */
   /* left: 21px; */
   /* top: 97px; */
-  background: rgba(255, 255, 255, 0.675);
+  /* background: rgba(255, 255, 255, 0.675);
   border-radius: 40px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   transform: translate(-50, -50%);
   box-sizing: border-box;
   padding: 30px 50px;
-  margin-top: 5%;
+  margin-top: 5%; */
   /* background: #000; */
 }
-.Qteelogo {
-  /* qtee 1 */
-
+.loginword {
   position: relative;
-  width: 366px;
-  height: 189px;
+  width: 81px;
+  height: 56px;
+  /* /* left: 919px; */
+  top: 20px;
 
-  /* left: 381px;
-  top: 133px; */
+  font-family: "Schoolbell";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 56px;
+  /* identical to box height */
 
-  background: url("../qtee.png");
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  /* width: 100px; */
-  /* position: absolute;
-  width: 484px;
-  /* height: 265px; */
-  left: calc(50% - 200px);
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .loginbox input {
-  width: 100%;
-  height: 40px;
-  margin-bottom: 10px;
-  background: #ffffff;
-  border: 2px solid #000000;
-  box-sizing: border-box;
-  border-radius: 40px;
+  font-family: "Schoolbell";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+
   text-align: center;
+
+  color: #ffffff;
+  box-sizing: border-box;
+
+  width: 472px;
+  height: 55px;
+
+  background: rgba(241, 241, 241, 0.3);
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+
+  position: relative;
+  top: 40px;
+
+  margin-bottom: 10px;
+
+  box-sizing: border-box;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  text-align: center;
+  color: rgb(255, 255, 255);
+  opacity: 1; /* Firefox */
 }
 .loginbox button {
-  height: 40px;
+  /* height: 40px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 40px;
 
   box-sizing: border-box;
   padding: 1px 65px;
-  margin-right: 25px;
+  margin-right: 25px; */
 }
 .loginbox button.login {
-  padding: 1px 70px;
-  margin-right: 0px;
+  font-family: "Schoolbell";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  width: 472px;
+  height: 55px;
+  /* left: 724px; */
+  top: 40px;
+
+  background: #234d72;
+  border-radius: 20px;
 }
 /* h1 {
   /* Rectangle 1 */
@@ -116,17 +206,10 @@ body {
   background: linear-gradient(180deg, #000000 0%, #00b2ff 100%);
   border-radius: 52px; 
 } */
-.back {
-  color: #ffffff;
-  font-family: "Saira Condensed", sans-serif;
-  font-size: 36px;
-  position: relative;
-  top: 0px;
-  left: 30px;
-}
+
 .forgot {
   position: absolute;
-  bottom: 85px;
+  bottom: 25px;
   left: 60px;
   color: black;
 }
