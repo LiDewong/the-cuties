@@ -40,9 +40,10 @@ body {
 }
 
 .droplet {
+  position: absolute;
+  left: 1000px;
   margin-top: 60px;
   padding: 0 10px;
-  margin-left: auto;
 }
 
 /* .droplet img{

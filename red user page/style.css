@@ -27,7 +27,7 @@ body {
 }
 
 .samProfile {
-  width: 1780px;
+  width: 1480px;
   position: absolute;
   z-index: 0;
   top: 135px;
@@ -40,9 +40,10 @@ body {
 }
 
 .microphone {
+  position: absolute;
+  left: 1200px;
   margin-top: 50px;
   padding: 0 10px;
-  margin-left: auto;
 }
 
 .microphone img {
