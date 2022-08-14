@@ -5,6 +5,7 @@ root {
 * {
   box-sizing: border-box;
   font-family: 'Schoolbell', cursive;
+  font-size: 150%;
   margin: 0;
   padding: 0;
   color: #333;
@@ -111,6 +112,7 @@ h2 {
   align-items: center;
   text-align: center;
   font-family: 'Schoolbell', cursive;
+  font-size: 150%;
 }
 .popup2 {
   background: rgba(0, 0, 0, 0.6);
@@ -123,6 +125,7 @@ h2 {
   align-items: center;
   text-align: center;
   font-family: 'Schoolbell', cursive;
+  font-size: 150%;
 }
 
 .popup-content {
@@ -170,7 +173,7 @@ h2 {
 }
 
 h2 {
-  font-size: 150%;
+  font-size: 200%;
   text-align: center;
   font-family: 'Schoolbell', cursive;
 }
@@ -184,7 +187,7 @@ p {
   margin-bottom: 0.5rem;
   width: 100%;
   height: 10%;
-  font-size: 150%;
+  font-size: 200%;
   font-family: 'Schoolbell', cursive;
   border: 0.1rem solid rgba(125, 189, 233, 1);
   background-color: rgba(125, 189, 233, 1);
