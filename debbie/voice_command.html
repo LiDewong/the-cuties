@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+
+
+
+
+
+
+    
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Schoolbell', cursive;
+    overflow: hidden;
+    
+    }
+
+    
+
+    .title{
+        position: absolute;
+        width: 100%;
+        
+        font-family: 'Schoolbell', cursive;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 134px;
+/* identical to box height */
+
+        text-align: center;
+
+        color: #656565;
+        padding-top: 30px;
+
+      }
+    .icon{
+       
+        position: absolute;
+        height: 132px;
+        left: 430px;
+        width: 100%;
+        top: 10px;
+        
+      
+    } 
+
+    .container{
+       margin: 200px auto;
+       text-align: center;
+       
+    }
+    
+    .rectamgle{
+       position: relative;
+        
+    }
+    .circle{
+        position: absolute;
+        top: 780px;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+      
+        
+      }
+    .inner_circle{
+        position: absolute;
+        top: 805px;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .talk{
+        position: absolute;
+        top: 825px;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .text{
+        position: absolute;
+        width: fit-content;
+        height: 45px;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+        top: 300px;
+
+        background: #ffffff;
+        border-radius: 15px;
+    }
+    .h2 {
+        position: relative;
+        margin: 0px;
+        font-size: 28px;
+        top: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+        }
+    
+    .voice {
+        position: absolute;
+        width: max-content;
+        padding-left: +20px;
+        padding-right: +20px;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+        top: 400px;
+  
+        background: #91b4de;
+
+        border-radius: 15px;
+        font-size: 28px;
+        
+        }
+
+        .talk:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+}
+   
+
+</style>
+<body>
+        <div class="header">
+        
+            <h1 class="title" >Voice Assistant</h1>
+            <svg class ="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M192 352c53.03 0 96-42.97 96-96v-160c0-53.03-42.97-96-96-96s-96 42.97-96 96v160C96 309 138.1 352 192 352zM344 192C330.7 192 320 202.7 320 215.1V256c0 73.33-61.97 132.4-136.3 127.7c-66.08-4.169-119.7-66.59-119.7-132.8L64 215.1C64 202.7 53.25 192 40 192S16 202.7 16 215.1v32.15c0 89.66 63.97 169.6 152 181.7V464H128c-18.19 0-32.84 15.18-31.96 33.57C96.43 505.8 103.8 512 112 512h160c8.222 0 15.57-6.216 15.96-14.43C288.8 479.2 274.2 464 256 464h-40v-33.77C301.7 418.5 368 344.9 368 256V215.1C368 202.7 357.3 192 344 192z"/></svg>
+            
+            <div class="container">
+            <img class="rectangle" src="Rectangle 42.png"  >
+            <img class="circle"src="circle.png" > 
+            <img class="inner_circle"src="Rectangle 32.png">
+            <input type="image" class="talk" src="parent.png">
+            <div class="text"><h2 class="h2">Hi I'm Qsee, how can I help you?</h2></div>
+
+            <p>
+                <div >
+                  <h2 class="voice" ></h2>
+                </div></p>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+        <script>
+            // The JavaScript Part Starts
+            const btn = document.querySelector(".talk");
+            const content = document.querySelector(".voice");
+    
+            const report = ["opening report sir"];
+            const attendance = ["opening attendance sir"];
+            const SpeechRecognition =
+              window.SpeechRecognition || window.webkitSpeechRecognition;
+            const recognition = new SpeechRecognition();
+    
+            recognition.onstart = function () {
+              console.log("How Can I Help You ?");
+            };
+            recognition.onresult = function (event) {
+              const current = event.resultIndex;
+    
+              const transcript = event.results[current][0].transcript;
+              content.textContent = transcript;
+              readOutLoud(transcript);
+            };
+    
+            btn.addEventListener("click", () => {
+              recognition.start();
+            });
+    
+            function readOutLoud(message) {
+              const speech = new SpeechSynthesisUtterance();
+    
+              speech.text = "I am not able to understand ,sir";
+    
+              if (message.includes("report")) {
+                const finalText = report[Math.floor(Math.random() * report.length)];
+                speech.text = finalText;
+                window.open("report.html");
+              }
+    
+              if (message.includes("attendance")) {
+                const finalText =
+                  attendance[Math.floor(Math.random() * attendance.length)];
+                speech.text = finalText;
+                window.open(
+                  "attendance_chart.html"
+                );
+              }
+              speech.volume = 1;
+              speech.rate = 1.1;
+              speech.pitch = 1;
+    
+              window.speechSynthesis.speak(speech);
+            }
+          </script>
+    </div>
+</body>
+</html>
