@@ -5,24 +5,30 @@
   height: 128px; 
 } */
 body {
-  margin: 0px;
-  padding: 0px;
-
-  background: url("../log in page background.jpg");
-  background-position: 45% 15%;
-  background-size: fixed;
+  position: absolute;
+  background-image: url("Group 10.png");
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 
-  /* background-position: center; */
+  /* background: url("Group 10.png");
+  width: 761px;
+  height: 541px; */
+  /* background-position: 45% 15%; */
+  /* background-size: fixed; */
+  /* background-repeat: no-repeat; */
+
+  background-position: center;
   /* background-color: transparent;
   background: #E5E5E5; */
 
   /* position: absolute;
-  width: 761px;
-  height: 541px;
+  
 
   background: linear-gradient(180deg, #000000 0%, #00b2ff 100%);
   border-radius: 52px; */
+}
+.background {
 }
 .rightcorner {
   position: absolute;
