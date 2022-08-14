@@ -1,3 +1,14 @@
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  background-image: url("Teacher's dashboard.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
 #nondeco {
   text-decoration: underline;
 }
@@ -63,4 +74,213 @@
   top: 0px;
 
   background: #ffffff;
+}
+.title {
+  position: absolute;
+  /* width: 260px; */
+  height: 134px;
+  left: 898px;
+  top: -10px;
+  font-family: "Schoolbell", cursive;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 134px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #656565;
+}
+.icon {
+  position: absolute;
+  width: 115px;
+  height: 115px;
+  left: 1358px;
+  top: 40px;
+  color: #656565;
+}
+.whiterect1 {
+  position: absolute;
+  width: 344px;
+  height: 499px;
+  left: 220px;
+  top: 235px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.whiterect2 {
+  position: absolute;
+  width: 342px;
+  height: 499px;
+  left: 600px;
+  top: 235px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.whiterect3 {
+  position: absolute;
+  width: 344px;
+  height: 499px;
+  left: 976px;
+  top: 235px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.qsee1 {
+  position: absolute;
+  width: 32px;
+  height: 30px;
+  left: 37px;
+  top: 41px;
+}
+.farhanah {
+  position: absolute;
+  width: 81px;
+  height: 25px;
+  left: 87px;
+  top: 18px;
+
+  font-family: "Schoolbell";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+.cat {
+  position: absolute;
+  /* width: 270px; */
+  height: 183px;
+  width: 270px;
+  left: 37px;
+  top: 80px;
+
+  /* background: url(image.png); */
+  border-radius: 20px;
+}
+.hello {
+  position: absolute;
+  width: 81px;
+  height: 25px;
+  left: 37px;
+  top: 243px;
+
+  font-family: "Schoolbell";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+.yellowline {
+  position: absolute;
+  width: 270px;
+  height: 0px;
+  left: 37px;
+  top: 320px;
+
+  border: 2px solid #ecc911;
+  transform: rotate(0.16deg);
+}
+.qsee2 {
+  position: absolute;
+  width: 32px;
+  height: 30px;
+  left: 37px;
+  top: 341px;
+}
+.AM {
+  position: absolute;
+  width: 126px;
+  height: 33px;
+  left: 77px;
+  top: 320px;
+
+  font-family: "Schoolbell";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+.Hi {
+  position: absolute;
+  width: 126px;
+  height: 33px;
+  left: 78px;
+  top: 335px;
+
+  font-family: "Schoolbell";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+.qsee3 {
+  position: absolute;
+  width: 32px;
+  height: 30px;
+  left: 37px;
+  top: 385px;
+}
+.M {
+  position: absolute;
+  width: 122px;
+  height: 33px;
+  left: 77px;
+  top: 360px;
+
+  font-family: "Schoolbell";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+.Wassup {
+  position: absolute;
+  width: 126px;
+  height: 33px;
+  left: 77px;
+  top: 372px;
+
+  font-family: "Schoolbell";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
 }
