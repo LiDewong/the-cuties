@@ -26,7 +26,7 @@ h1 > span {
 } */
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 4rem;
   font-weight: 700;
 }
@@ -182,7 +182,7 @@ p {
   margin-bottom: 0.5rem;
   width: 100%;
   height: 10%;
-  font-size: 150%;
+  font-size: 100%;
   font-family: 'Schoolbell', cursive;
   border: 0.1rem solid rgba(125, 189, 233, 1);
   background-color: rgba(125, 189, 233, 1);
@@ -210,7 +210,7 @@ p {
 
 .nextbtn {
   margin-top: 20%;
-  font-size: 100%;
+  font-size: 60%;
   width: 20rem;
   text-align: center;
   font-family: 'Schoolbell', cursive;
@@ -235,7 +235,7 @@ p {
 
 .sbtbtn {
   margin-top: 20%;
-  font-size: 100%;
+  font-size: 60%;
   width: 20rem;
   text-align: center;
   font-family: 'Schoolbell', cursive;
