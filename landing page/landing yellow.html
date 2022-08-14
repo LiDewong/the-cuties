@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QSEE in Qtee</title>
+    <link rel="stylesheet" href="style yellow.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#" class="logo"><img src="logo.png" /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="..\new-login\loginnew.html">Login</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2><span id="caption">QSEE</span> in Qtee</h2>
+          <h3>Revolutionizing Integrated Digital Learning</h3>
+          <a href="#" id="learnMore">Learn more</a>
+        </div>
+        <div class="imgBox"><img src="yellow.png" class="QSEE" alt="" /></div>
+      </div>
+      <ul class="thumb">
+        <li>
+          <img
+            src="red.png"
+            onclick="imgSlider('red.png') ; changeCircleColor('#F98988'); changeCaptionColor('#F17A79'); changeLearnMoreColor('#F17A79')"
+          />
+        </li>
+        <li>
+          <img
+            src="blue.png"
+            onclick="imgSlider('blue.png'); changeCircleColor('#83c6f2'); changeCaptionColor('#71b6e3'); changeLearnMoreColor('#71b6e3')"
+          />
+        </li>
+        <li>
+          <img
+            src="yellow.png"
+            onclick="imgSlider('yellow.png'); changeCircleColor('#FFE580'); changeCaptionColor('#CBA200'); changeLearnMoreColor('#CBA200')"
+          />
+        </li>
+      </ul>
+    </section>
+
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".QSEE").src = anything;
+      }
+
+      function changeCircleColor(color) {
+        const circle = document.querySelector(".circle");
+        circle.style.background = color;
+      }
+
+      function changeCaptionColor(color) {
+        const caption = document.getElementById("caption");
+        caption.style.color = color;
+      }
+
+      function changeLearnMoreColor(color) {
+        const learnMore = document.getElementById("learnMore");
+        learnMore.style.backgroundColor = color;
+      }
+    </script>
+  </body>
+</html>
