@@ -1,4 +1,57 @@
-.selection {
-  text-decoration: none;
-  font-family: "Schoolbell", cursive;
+#nondeco {
+  text-decoration: underline;
+}
+.selection1 {
+  position: absolute;
+  width: 64px;
+  height: 33px;
+  left: 100px;
+  top: 94px;
+
+  font-family: "Schoolbell";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #656565;
+}
+.selection2 {
+  position: absolute;
+  width: 40px;
+  height: 33px;
+  left: 265px;
+  top: 93px;
+
+  font-family: "Schoolbell";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #656565;
+}
+.selection3 {
+  position: absolute;
+  width: 91px;
+  height: 33px;
+  left: 389px;
+  top: 94px;
+
+  font-family: "Schoolbell";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #656565;
 }
