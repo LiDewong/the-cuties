@@ -184,7 +184,7 @@ p {
   margin-bottom: 0.5rem;
   width: 100%;
   height: 10%;
-  font-size: 100%;
+  font-size: 150%;
   font-family: 'Schoolbell', cursive;
   border: 0.1rem solid rgba(125, 189, 233, 1);
   background-color: rgba(125, 189, 233, 1);
@@ -206,11 +206,11 @@ p {
 }
 
 .choice-text {
-  padding: 1.5rem;
+  padding: 1.0rem;
 }
 
 .nextbtn {
-  margin-top: 2%;
+  margin-top: 20%;
   font-size: 100%;
   width: 20rem;
   text-align: center;
@@ -225,7 +225,7 @@ p {
 }
 
 .nextbtn:hover {
-  margin-top: 2%;
+  margin-top: 20%;
   cursor: pointer;
   box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 0, 0, 0.8);
   border-radius: 10px;
@@ -235,7 +235,7 @@ p {
 }
 
 .sbtbtn {
-  margin-top: 2%;
+  margin-top: 20%;
   font-size: 100%;
   width: 20rem;
   text-align: center;
@@ -250,7 +250,7 @@ p {
 }
 
 .sbtbtn:hover {
-  margin-top: 2%;
+  margin-top: 20%;
   cursor: pointer;
   box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 0, 0, 0.8);
   border-radius: 10px;
