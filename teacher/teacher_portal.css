@@ -161,7 +161,7 @@ body {
 }
 .farhanah {
   position: absolute;
-  width: 81px;
+  width: 270px;
   height: 25px;
   left: 87px;
   top: 18px;
@@ -192,20 +192,40 @@ body {
 }
 .hello {
   position: absolute;
-  width: 81px;
+  width: 300px;
   height: 25px;
   left: 37px;
-  top: 243px;
+  top: 253px;
 
   font-family: "Schoolbell";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 16px;
   /* identical to box height */
 
   display: flex;
   align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+.helloo {
+  position: absolute;
+  width: 300px;
+  height: 25px;
+  left: 35px;
+  top: 275px;
+
+  font-family: "Schoolbell";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: left;
   text-align: center;
 
   color: #000000;
