@@ -322,3 +322,15 @@ body {
 
   color: #000000;
 }
+
+.plus{
+    position: fixed;
+    bottom: 50px;
+    right: 70px;
+    max-width: 100px;
+}
+
+.plus:hover {
+    cursor: pointer;
+    
+}
